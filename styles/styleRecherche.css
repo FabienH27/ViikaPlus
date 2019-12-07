@@ -41,3 +41,10 @@ header>nav>a>img{
 .nav-link-grow-up:hover::before {
     height: 5px;
 }
+main{
+    max-width: 1250px;
+    margin: auto;
+}
+main img{
+    width: 550px;
+}
