@@ -40,10 +40,13 @@ body{
 nav a {
     display: inline;
 }
-header img{
+.icon>img{
+    width: 40px;
     float: right;
-    margin: 35px 50px;
-    width: 30px;
+    margin: 35px 30px;
+}
+.icon>img:hover{
+    background-c:#C60A28;
 }
 header{
     background-color : #000;

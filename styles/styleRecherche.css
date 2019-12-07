@@ -1,0 +1,43 @@
+body{
+    background-color: #000;
+    background-image: url("../imgs/karen-zhao-jLRIsfkWRGo-unsplash.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+header>nav>a>img{
+    width: 200px;
+    
+}
+.nav-link {
+    vertical-align: middle;
+    font-weight: 200;
+    font-size: 150%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    margin: 0 25px;
+    display: inline-block;
+    position: relative;
+}
+  
+.nav-link:hover {
+    color: #C60A28;
+}
+.nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #C60A28;
+}
+.nav-link-grow-up::before {
+    height: 0%;
+    width: 100%;
+    top: 0px;
+}
+  
+.nav-link-grow-up:hover::before {
+    height: 5px;
+}
