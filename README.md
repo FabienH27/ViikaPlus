@@ -9,4 +9,4 @@ Activer Git dans VS CODE :
 - Ajouter le lien : https://github.com/Fabounch27/Viika
 - Sélectionner le dossier d'emplacement local
 - Sur VS Code : CTRL + SHIFT + G  pour ouvrir le controle de source
-- https://www.youtube.com/watch?v=9cMWR-EGFuY
+- suite : https://www.youtube.com/watch?v=9cMWR-EGFuY
