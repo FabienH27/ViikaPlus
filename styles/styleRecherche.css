@@ -47,35 +47,22 @@ h1{
     padding: 20px 100px;
 }
 section{
-    max-width: 1250px;
+    max-width: 1400px;
 }
 main img{
-    width: 500px;
+    width: 550px;
 }
-
-.chernobyl:hover{
-    content: url("../imgs/hover/chernobylHover.png");
-    width: 500px;
+article .hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-.mrRobot:hover{
-    content: url("../imgs/hover/mrRobotHover.png");
-    width: 500px;
+article{
+    position: relative;
 }
-.TheMandalorian:hover{
-    content: url("../imgs/hover/TheMandalorianHover.png");
-    width: 500px;
-}
-.Sherlock:hover{
-    content: url("../imgs/hover/SherlockHover.png");
-    width: 500px;
-}
-.PeakyBlinders:hover{
-    content: url("../imgs/hover/PeakyBlindersHover.png");
-    width: 500px;
-}
-.BlackMirror:hover{
-    content: url("../imgs/hover/BlackMirrorHover.png");
-    width: 500px;
+article:hover .hover {
+    display: inline;
 }
 @media screen and (min-width: 1101px){
     section{   
@@ -85,7 +72,6 @@ main img{
     }
     article{   
         grid-template-columns: repeat(2,1fr);
-        width: 500px;
         margin: 0 auto;
     }
 }
@@ -93,12 +79,10 @@ main img{
     section{
         display: grid;
         grid-template-columns: 1fr;
-        grid-auto-columns: 500px;
         margin: 0 auto;
     }
     article{   
         grid-template-columns:1fr;
-        grid-auto-columns: 500px;
         margin: 0 auto;
     }
 }
