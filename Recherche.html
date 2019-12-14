@@ -12,12 +12,18 @@
     <body>
         <header>
             <!--Navigation : https://codepen.io/sreisner/pen/yOOOjx -->
+            <!--NE PAS OUBLIER DE METTRE FORM-->
             <nav>
-                <a class="nav-link" href="index.html"><img src="imgs/Logo_pages.png" alt="logo"></a>
-                <a class="nav-link nav-link-grow-up" href="#">Qui sommes-nous ?</a>
-                <a href="#"><img src="imgs/Star.png" alt="fav"></a>
-                <a href="#"><img src="imgs/Account.png" alt="compte"></a>
-                <a href="#"><img src="imgs/search-24px.svg" alt="recherche"></a>
+                <a class="nav-link item1" href="index.html"><img src="imgs/Logo_pages.png" alt="logo"></a>
+                <a class="nav-link nav-link-grow-up item2" href="#">Qui sommes-nous ?</a>
+                <!--<a href="#"><img src="imgs/Star.png" alt="fav"></a>
+                <a class="item4" href="#"><img src="imgs/Account.png" alt="compte"></a>    -->
+                <div class="search-container">
+                    <form action="Recherche.html">
+                        <button type="submit"><img src="imgs/search-24px.svg"></button>
+                        <input type="text" placeholder="Chercher..." name="Recherche">
+                    </form>
+                </div>
             </nav>
         </header>
         <main>
