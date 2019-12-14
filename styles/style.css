@@ -40,11 +40,24 @@ body{
 nav a {
     display: inline;
 }
-nav>a>img{
-    width: 40px;
+
+/*recherche*/
+.search-container{
+    margin: 20px 20px;
     float: right;
-    margin: 25px 30px;
 }
+nav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+    background-color: #000;
+    border: solid 2px #666;
+    color: #666;
+    border-radius: 30px;
+}
+nav input[type="text"]:focus{
+
+}
+
 header{
     background-color : #000;
     position: sticky;
