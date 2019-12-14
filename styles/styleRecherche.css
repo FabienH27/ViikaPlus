@@ -1,6 +1,6 @@
 body{
     background-color: #000;
-    background-image: url("../imgs/karen-zhao-jLRIsfkWRGo-unsplash.jpg");
+    background-image: url("../imgs/fond_Blur.png");
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
@@ -80,7 +80,7 @@ button{
     border: none;
     width: 50px;
     vertical-align: middle;
-    background-color: #000;
+    background-color: transparent;
 }
 /**/
 h1{
@@ -170,15 +170,9 @@ article:hover .hover {
         text-align: center;
         padding-top: 25px;
     }
-    a{
-        text-align: center;
-        margin: 0 auto;
-    }
     .item4{
-        grid-column: 3;
-    }
-    .item5{
         grid-column: 1 / 4;
+        margin:  30px auto;
     }
 }
 
@@ -187,7 +181,6 @@ footer>nav:nth-child(2)>a>img{
 }
 
 footer{
-
     font-family: 'Roboto', sans-serif;
     margin-top: 150px;
     background-color: #000;
@@ -203,4 +196,10 @@ footer>h4{
     border-top: solid 1px #565656;
     font-weight: 300;
     color: #565656;
+}
+header svg{
+    fill:#fff;
+}
+svg:hover{
+    fill: #C60A28;
 }
