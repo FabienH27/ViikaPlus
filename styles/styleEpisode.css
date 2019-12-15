@@ -1,0 +1,36 @@
+header,h1{
+    font-family: 'Poppins', sans-serif;
+}
+div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+video{
+    width: 900px;
+    padding: 0 20px;
+}
+section>h1,h3,p{
+    padding-left: 100px;
+}
+h1{
+    color: #fff;
+    font-weight: 800;
+    font-size: 80px;
+    font-variant: small-caps;
+    margin: 0;
+}
+h3{
+    color: #ddd;
+    margin: 10px 0;
+    font-family: 'Roboto', sans-serif;
+    font-variant: small-caps;
+    font-size: 20px;
+    font-weight: 200;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+    max-width: 500px;
+    text-align: justify;
+    font-size: 18px;
+    color: #fff;
+}
