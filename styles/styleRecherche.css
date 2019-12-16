@@ -55,6 +55,18 @@ nav a{
     display: inline;
 }
 
+header form img{
+    width: 40px;
+    padding: 10px;
+    border-radius: 40px;
+}
+header form img:hover{
+    transition: 0.2s;
+
+    background-color: #C60A28;
+
+}
+
 /*recherche*/
 .search-container{
     margin: 20px;
@@ -179,7 +191,6 @@ article:hover .hover {
 footer>nav:nth-child(2)>a>img{
     width: 50px;
 }
-
 footer{
     font-family: 'Roboto', sans-serif;
     margin-top: 150px;
@@ -197,9 +208,7 @@ footer>h4{
     font-weight: 300;
     color: #565656;
 }
-header svg{
-    fill:#fff;
-}
-svg:hover{
-    fill: #C60A28;
+img:hover{
+    border-radius: 50px;
+    background-color: #C60A28;
 }

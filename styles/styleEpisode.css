@@ -1,7 +1,99 @@
-header,h1{
+body{
+    background-color: #000;
+    background-image: url("../imgs/fond_Blur.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
 }
-div{
+main,header{
+    font-family: 'Poppins', sans-serif;    
+}
+header>nav>a:first-child>img{
+    width: 200px;
+}
+header>nav>a:nth-child(n+3)>img{
+    margin-top: 20px;
+    padding: 0 20px;
+    width: 40px;
+}
+header>nav>a:nth-child(n+3){
+    float: right;
+}
+.nav-link {
+    vertical-align: middle;
+    font-weight: 200;
+    font-size: 150%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    margin: 0 25px;
+    display: inline-block;
+    position: relative;
+}
+  
+.nav-link:hover {
+    color: #C60A28;
+}
+.nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #C60A28;
+}
+.nav-link-grow-up::before {
+    height: 0%;
+    width: 100%;
+    top: 0px;
+}
+
+.nav-link-grow-up:hover::before {
+    height: 5px;
+}
+nav a{
+    display: inline;
+}
+
+header form img{
+    width: 40px;
+    padding: 10px;
+    border-radius: 40px;
+}
+header form img:hover{
+    transition: 0.2s;
+
+    background-color: #C60A28;
+
+}
+/*recherche*/
+.search-container{
+    margin: 20px;
+    float: right;
+}
+nav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+}
+input:not(hover){
+    background-color: #000;
+    border:solid 2px #666;
+    color: #666;
+    border-radius: 30px;
+}
+input:focus,button:focus{
+    outline: none;
+}
+input:focus{
+    border:solid 2px #C60A28;
+}
+button{
+    border: none;
+    width: 50px;
+    vertical-align: middle;
+    background-color: transparent;
+}
+main>div{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
@@ -9,7 +101,7 @@ video{
     width: 900px;
     padding: 0 20px;
 }
-section>h1,h3,p{
+section>h1,h3,h2,p{
     padding-left: 100px;
 }
 h1{
@@ -21,16 +113,22 @@ h1{
 }
 h3{
     color: #ddd;
-    margin: 10px 0;
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-variant: small-caps;
     font-size: 20px;
     font-weight: 200;
 }
+h2{
+    margin: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-variant: small-caps;
+    font-size: 40px;
+}
 p{
     font-family: 'Roboto', sans-serif;
     max-width: 500px;
-    text-align: justify;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
 }
