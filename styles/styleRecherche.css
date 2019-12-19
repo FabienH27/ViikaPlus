@@ -62,7 +62,6 @@ header form img{
 }
 header form img:hover{
     transition: 0.2s;
-
     background-color: #C60A28;
 
 }
@@ -208,7 +207,8 @@ footer>h4{
     font-weight: 300;
     color: #565656;
 }
-img:hover{
+footer>nav:nth-child(2) img:hover{
+    transition: 0.5s;
     border-radius: 50px;
     background-color: #C60A28;
 }

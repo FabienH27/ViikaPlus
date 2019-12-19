@@ -8,17 +8,17 @@
         <link href="../styles/stylePages.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width">
         <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <!--Navigation : https://codepen.io/sreisner/pen/yOOOjx -->
             <!--NE PAS OUBLIER DE METTRE FORM-->
             <nav>
-                <a class="nav-link item1" href="index.html"><img src="../imgs/Logo_pages.png" alt="logo"></a>
+                <a class="nav-link item1" href="../index.html"><img src="../imgs/Logo_pages.png" alt="logo"></a>
                 <a class="nav-link nav-link-grow-up item2" href="#">Qui sommes-nous ?</a>
                 <div class="search-container item4">
-                    <form action="Recherche.html">
+                    <form action="../Recherche.html">
                         <label class="">
                             <input type="text" placeholder="Chercher..." name="Recherche">
                             <button type="submit"><img src="../imgs/search-24px.svg"></button>
@@ -36,25 +36,70 @@
             </nav>
         </header>
         <main>
-            <div>
-                <section>
+            <section>
+                <section class="desc">
                     <h1>chernobyl</h1>
                     <h3>2019 - Craig Mazin</h3>
-                    <p>Lors de la pire catastrophe de l'histoire causée par l'homme le 26 avril 1986, 
-                    des hommes et des femmes ont sacrifié leurs vies afin d'éviter le pire pour leurs consœurs.</p>
-
-                    <h2>langue</h2>
+                    <!--Notation : https://codepen.io/s_crystal/pen/pJpMZX-->
+                    <section id="like" class="rating">
+                        <!-- FIFTH HEART -->
+                        <input type="radio" id="heart_5" name="like" value="5" />
+                        <label for="heart_5" title="Five">&#9733;</label>
+                        <!-- FOURTH HEART -->
+                        <input type="radio" id="heart_4" name="like" value="4" />
+                        <label for="heart_4" title="Four">&#9733;</label>
+                        <!-- THIRD HEART -->
+                        <input type="radio" id="heart_3" name="like" value="3" />
+                        <label for="heart_3" title="Three">&#9733;</label>
+                        <!-- SECOND HEART -->
+                        <input type="radio" id="heart_2" name="like" value="2" />
+                        <label for="heart_2" title="Two">&#9733;</label>
+                        <!-- FIRST HEART -->
+                        <input type="radio" id="heart_1" name="like" value="1" />
+                        <label for="heart_1" title="One">&#9733;</label>
+                    </section>
+                    <section class="favoris">
+                        <input id="toggle1" type="checkbox">
+                        <label for="toggle1"> Coup de cœur</label>
+                    </section>
+                    <section>
+                        <p>Lors de la pire catastrophe de l'histoire causée par l'homme le 26 avril 1986, 
+                        des hommes et des femmes ont sacrifié leurs vies afin d'éviter le pire pour leurs consœurs.</p>
+                    </section>
+                    <section>
+                        <h2>langue</h2>
+                        <label class="container">Anglais (VOST)
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Français
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Allemand
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </section>
+                    <section>
+                        <select>
+                            <option disabled>Episodes</option>
+                            <option>Episode 01 - 1:23:45</option>
+                            <option>Episode 02 - Veuillez garder votre calme</option>
+                            <option>Episode 03 - Que la terre s'ouvre</option>
+                            <option>Episode 04 - Le Bonheur de toute l'humanité</option>
+                            <option>Episode 05 - Mémoire éternelle</option>
+                        </select>
+                    </section>
                 </section>
-                <section>
+                <section class="videoplayer">
                     <video src="../videos/Chernobyl (2019) - Official Trailer - HBO.mp4" controls>
                         <p>Votre navigateur ne prend pas en charge les vidéos HTML5. Voici, à la place, un <a href="../videos/Chernobyl (2019) - Official Trailer - HBO.mp4">lien vers la vidéo</a>.</p> 
-                      </video>
+                        </video>
                 </section>
             </section>
-
         </main>
         <footer>
-
         </footer>
     </body>
 </html>
