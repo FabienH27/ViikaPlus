@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Viika+ - Cinémas & Séries</title>
+        <meta charset="utf-8">
+        <link href="../styles/reset.css" rel="stylesheet">
+        <link href="../styles/styleEpisode.css" rel="stylesheet">
+        <link href="../styles/stylePages.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!--Navigation : https://codepen.io/sreisner/pen/yOOOjx -->
+            <!--NE PAS OUBLIER DE METTRE FORM-->
+            <nav>
+                <a class="nav-link item1" href="../index.html"><img src="../imgs/Logo_pages.png" alt="logo"></a>
+                <a class="nav-link nav-link-grow-up item2" href="#">Qui sommes-nous ?</a>
+                <div class="search-container item4">
+                    <form action="../Recherche.html" method="POST">
+                        <label>
+                            <input type="text" placeholder="Chercher..." name="Recherche">
+                        </label>
+                        <label>
+                            <button type="submit"><img src="../imgs/search-24px.svg" alt="chercher"></button>
+                        </label>
+                        <label class="fav">
+                            <button>
+                                <img src="../imgs/Star.png" alt="favoris">
+                            </button>
+                        </label>
+                        <label class="fav">
+                            <button>
+                                <img src="../imgs/Account.png" alt="compte">
+                            </button>
+                        </label>
+                    </form>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <section class="desc">
+                    <h2>chernobyl</h2>
+                    <!--Notation : https://codepen.io/s_crystal/pen/pJpMZX-->
+                    <section class="notation">
+                        <h3>2019 - Craig Mazin</h3>
+                        <div id="like" class="rating">
+                            <!-- FIFTH HEART -->
+                            <input type="radio" id="heart_5" name="like" value="5" />
+                            <label for="heart_5" title="Chef d'oeuvre">&#9733;</label>
+                            <!-- FOURTH HEART -->
+                            <input type="radio" id="heart_4" name="like" value="4" />
+                            <label for="heart_4" title="Très bien">&#9733;</label>
+                            <!-- THIRD HEART -->
+                            <input type="radio" id="heart_3" name="like" value="3" />
+                            <label for="heart_3" title="Pas mal">&#9733;</label>
+                            <!-- SECOND HEART -->
+                            <input type="radio" id="heart_2" name="like" value="2" />
+                            <label for="heart_2" title="Pas terrible">&#9733;</label>
+                            <!-- FIRST HEART -->
+                            <input type="radio" id="heart_1" name="like" value="1" />
+                            <label for="heart_1" title="Très mauvais">&#9733;</label>
+                        </div>
+                        <div class="favoris">
+                            <input id="toggle1" type="checkbox">
+                            <label for="toggle1"> Coup de cœur</label>
+                        </div>
+                    </section>
+                    <div>
+                        <p>Lors de la pire catastrophe de l'histoire causée par l'homme le 26 avril 1986, 
+                        des hommes et des femmes ont sacrifié leurs vies afin d'éviter le pire pour leurs consœurs.</p>
+                    </div>
+                    <section class="version">
+                        <h4>langue</h4>
+                        <label class="container">Anglais (VOST)
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Français
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Allemand
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </section>
+                    <div>
+                        <select>
+                            <option disabled>Episodes</option>
+                            <option selected>Episode 01 - 1:23:45</option>
+                            <option>Episode 02 - Veuillez garder votre calme</option>
+                            <option>Episode 03 - Que la terre s'ouvre</option>
+                            <option>Episode 04 - Le Bonheur de toute l'humanité</option>
+                            <option>Episode 05 - Mémoire éternelle</option>
+                        </select>
+                    </div>
+                </section>
+                <section class="videoplayer">
+                    <video src="../videos/ChernobylVideo.mp4" controls poster="../imgs/chernobylPreview2.png">
+                        <p>Votre navigateur ne prend pas en charge les vidéos HTML5. Voici, à la place, un <a href="../videos/ChernobylVideo.mp">lien vers la vidéo</a>.</p> 
+                    </video>
+                </section>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </body>
+</html>

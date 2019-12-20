@@ -247,8 +247,7 @@ label.container{
   
 .favoris input:checked  {
     background-color: #000;
-}
-
+} 
 
 /**/
 .rating,.favoris{
@@ -300,6 +299,15 @@ label.container{
         padding-top: 100px;
         width: 100%;
         height: auto;
+    }
+    select{
+        display: block;
+        margin: 10px auto;
+        outline: none;
+        padding: 10px;
+        background-color: #212121;
+        color: #BBB;
+        font-size: 20px;
     }
 }
 
