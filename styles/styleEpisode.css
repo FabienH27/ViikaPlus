@@ -53,7 +53,7 @@ header>nav>a:nth-child(n+3){
 .nav-link-grow-up:hover::before {
     height: 5px;
 }
-nav a{
+main nav a{
     display: inline;
 }
 
@@ -108,7 +108,7 @@ h3{
     font-size: 30px;
     font-weight: 100;
 }
-h4{
+main h4{
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-variant: small-caps;
@@ -230,12 +230,12 @@ label.container{
     text-align: center;
 }
 .favoris label::before{
-    content:url("../imgs/heart.png");
+    content:url("../imgs/Icones/Heart.png");
     vertical-align: middle;
 }
 
 .favoris input:checked+label::before{
-    content:url("../imgs/heartChecked.png");
+    content:url("../imgs/Icones/heartChecked.png");
 }
 .favoris input:checked+label{
     font-weight: 700;
@@ -258,14 +258,14 @@ label.container{
         display: grid;
         grid-template-columns: 35% 65%;
     }
-    h2,h4{
+    h2,main h4{
         margin: 0;
     }
-    h2,h3,h4,p,.rating{
+    h2,h3,main h4,p,.rating{
         padding-left: 100px;
     }
     select{
-        margin: 30px 0 0 100px;
+        margin: 30px 0 0 80px;
         outline: none;
         padding: 10px;
         background-color: #212121;
@@ -282,13 +282,25 @@ label.container{
     p{
         max-width: 500px;
     }
+    footer{
+        text-align: center;   
+    }
+    footer>nav:first-child>a{
+        padding-left: 150px;
+    }
+    footer>nav{
+        margin: 20px 0;
+    }
+    footer>nav:nth-child(2){
+        padding-left: 20px;
+    }
 }
-@media screen and (min-width: 1200px) and (max-width:1499px){
+@media screen and (min-width: 1201px) and (max-width:1499px){
     main>div:first-of-type{
         display:grid;
         grid-template-columns: 550px 750px;
     }
-    h2,h3,h4,p,.rating{
+    h2,h3,main h4,p,.rating{
         padding-left: 20px;
     }
     p{
@@ -308,6 +320,20 @@ label.container{
         background-color: #212121;
         color: #BBB;
         font-size: 20px;
+    }
+    footer>nav:first-child{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        margin: 0 auto;       
+    }
+    footer>nav>a{
+        line-height: 2.5em;
+        grid-template-columns:1fr;
+        margin: 0 auto;  
+        text-align: center;     
+    }
+    footer>nav:nth-child(2){
+        text-align: center;
     }
 }
 
@@ -329,7 +355,7 @@ label.container{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
-    h2,h3,p,h4,.notation,.favoris{
+    h2,h3,p,main h4,.notation,.favoris{
         text-align: center;
         margin: 10px auto;
     }
@@ -338,7 +364,7 @@ label.container{
     }
     select{
         display: block;
-        margin: 10px auto;
+        margin: 5px auto;
         outline: none;
         padding: 10px;
         background-color: #212121;
@@ -349,10 +375,66 @@ label.container{
         text-align: justify;
         max-width: 800px;
     }
+    footer>nav:first-child{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;       
+    }
+    footer>nav>a{
+        line-height: 2.5em;
+        grid-template-columns:1fr;
+        margin: 0 auto;  
+        text-align: center;     
+    }
+    footer>nav:nth-child(2){
+        text-align: center;
+    }
 }
 @media screen and (max-width:999px){
     main>div{
         width: 80%;
         margin: 0 auto;
     }
+    footer>nav:first-child{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;       
+    }
+    footer>nav>a{
+        line-height: 2.5em;
+        grid-template-columns:1fr;
+        margin: 0 auto;  
+        text-align: center;     
+    }
+    footer>nav:nth-child(2){
+        text-align: center;
+    }
+}
+footer>nav:first-child>a>img{
+    width: 130px;
+}
+footer>nav:nth-child(2)>a>img{
+    width: 50px;
+}
+footer{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 300px;
+    padding-top: 10px;
+}
+footer>nav>a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+footer>h4{
+    padding-top: 10px;
+    text-align: center;
+    border-top: solid 1px #565656;
+    font-weight: 300;
+    color: #565656;
+}
+footer>nav:nth-child(2) img:hover{
+    transition: 0.2s;
+    border-radius: 50px;
+    background-color: #C60A28;
 }
