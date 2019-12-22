@@ -1,0 +1,119 @@
+
+/*------HEADER------*/
+
+header>nav>a:first-child>img{
+    width: 200px;
+}
+header>nav>a:nth-child(n+4)>img{
+    margin-top: 20px;
+    padding: 0 20px;
+    width: 40px;
+}
+header>nav>a:nth-child(n+4){
+    float: right;
+}
+.nav-link {
+    vertical-align: middle;
+    font-weight: 200;
+    font-size: 150%;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+    margin: 0 25px;
+    display: inline-block;
+    position: relative;
+}
+  
+.nav-link:hover {
+    color: #C60A28;
+}
+.nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #C60A28;
+}
+.nav-link-grow-up::before {
+    height: 0%;
+    width: 100%;
+    top: 0px;
+}
+
+.nav-link-grow-up:hover::before {
+    height: 5px;
+}
+main nav a{
+    display: inline;
+}
+
+header form img{
+    width: 40px;
+    padding: 10px;
+    border-radius: 40px;
+}
+header form img:hover{
+    transition: 0.2s;
+
+    background-color: #C60A28;
+
+}
+/*recherche*/
+.search-container{
+    margin: 20px;
+    float: right;
+}
+nav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+}
+input:not(hover){
+    background-color: #000;
+    border:solid 2px #666;
+    color: #666;
+    border-radius: 30px;
+}
+input:focus,button:focus{
+    outline: none;
+}
+input:focus{
+    border:solid 2px #C60A28;
+}
+button{
+    border: none;
+    width: 50px;
+    vertical-align: middle;
+    background-color: transparent;
+}
+
+/*------FOOTER------*/
+
+footer>nav:first-child>a>img{
+    width: 130px;
+}
+footer>nav:nth-child(2)>a>img{
+    width: 50px;
+}
+footer{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 300px;
+    padding-top: 10px;
+}
+footer>nav>a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+footer>h4{
+    padding-top: 10px;
+    text-align: center;
+    border-top: solid 1px #565656;
+    font-weight: 300;
+    color: #565656;
+}
+footer>nav:nth-child(2) img:hover{
+    transition: 0.2s;
+    border-radius: 50px;
+    background-color: #C60A28;
+}

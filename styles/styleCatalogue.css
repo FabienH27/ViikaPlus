@@ -1,0 +1,270 @@
+body{
+    background-color: #000;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+
+}
+main{
+    width: 70%;
+    margin: auto;
+}
+
+section:first-child>article{
+    background-image: url("../imgs/Séries/Catalogue/tendance.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center; 
+    height: 400px;
+    color: #fff;
+    font-variant: small-caps;
+    padding-left: 40px;
+}
+section>article>h4{
+    padding-top: 80px;
+    font-weight: 400;
+    letter-spacing: .2em;
+
+}
+section>article>h1{
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: .15em;
+}
+section>article button{
+    border-radius: 30px;
+    margin-top: 25px;
+    padding: 10px 25px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    background-color: #fff;
+    width: auto;
+    font-size: 30px;
+    font-variant: small-caps;
+    cursor: pointer;
+    font-family: 'Roboto' sans-serif;
+    transition: .2s;
+}
+/* https://codepen.io/LeoPragi/pen/gzrGoG */
+section>article button:hover{
+    box-shadow: 0px 15px 20px rgba(0,0, 0, .5);
+    background-color: #C60A28;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+section{
+    margin-top: 100px;
+    background-color: #080808;
+    border-radius: 20px;
+}
+section>h2{
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    margin: 20px;
+    padding-bottom: 5px;
+}
+
+section>h3{
+    color: #fff;
+}
+
+section a>h5{
+    text-decoration: none;
+    color: #C60A28;
+    float: right;
+    margin-right: 20px;
+    font-weight: 400;
+    transition: .2s;
+}
+section a>h5:hover{
+    color: #fff;
+}
+h2:before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 1px;
+    bottom: -5px;
+    border-bottom: 5px solid red;
+}
+article>a>.hover {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+article{
+    position: relative;
+}
+article:hover .hover {
+    box-shadow: 0px 15px 20px rgba(0,0, 0, .5);
+    display: inline;
+}
+article:hover a>img:first-of-type{
+    visibility: hidden;
+}
+
+@media screen and (min-width:1200px){
+    section img,.hover{
+        width: 150px;
+    }
+    .nouveautes,.action{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .nouveautes article, .action article{
+        margin: 30px auto;
+    }
+    .drames{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .drames article{
+        margin: 30px auto;
+    }
+    .categorie{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 100px;
+    }
+    .sf{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sf article{    
+        margin: 20px auto;
+    }
+    section>article>h1{
+        font-size: 100px;
+    }
+    section:first-child>article{
+        background-image: url("../imgs/Séries/Catalogue/tendance.png");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center; 
+        height: 400px;
+        color: #fff;
+        font-variant: small-caps;
+        padding-left: 40px;
+    }
+    footer{
+        text-align: center;   
+    }
+    footer>nav:first-child>a{
+        padding-left: 150px;
+    }
+    footer>nav{
+        margin: 20px 0;
+    }
+    footer>nav:nth-child(2){
+        padding-left: 20px;
+    }
+}
+@media screen and (min-width:699px) and (max-width:1199px){
+    section img,.hover{
+        width: 150px;
+    }
+    .nouveautes,.action{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .nouveautes article, .action article{
+        margin: 30px auto;
+    }
+    .drames{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .drames article{
+        margin: 30px auto;
+    }
+    .categorie{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 100px;
+    }
+    .sf{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sf article{    
+        margin: 20px auto;
+    }
+    footer{
+        text-align: center;   
+    }
+    footer>nav:first-child>a{
+        padding-left: 150px;
+    }
+    footer>nav{
+        margin: 20px 0;
+    }
+    footer>nav:nth-child(2){
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width:699px ){
+    section img,.hover{
+        width: 200px;
+    }
+    .nouveautes,.action{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .nouveautes article, .action article{
+        margin: 30px auto;
+    }
+    .drames{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    .drames article{
+        margin: 30px auto;
+    }
+    .categorie{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 100px;
+    }
+    .sf{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sf article{    
+        margin: 20px auto;
+    }
+    section>article>h1{
+        font-size: 40px;
+    }
+    section:first-child>article{
+        margin-top: 160px;
+        background-image: url("../imgs/Séries/Catalogue/tendance.png");
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:30%; 
+        height: 400px;
+        color: #fff;
+        font-variant: small-caps;
+        padding-left: 40px;
+    }
+    form>button:nth-child(n+3){
+        margin:0 30px;
+    }
+    footer>nav:first-child{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;       
+    }
+    footer>nav>a{
+        line-height: 2.5em;
+        grid-template-columns:1fr;
+        margin: 0 auto;  
+        text-align: center;     
+    }
+    footer>nav:nth-child(2){
+        text-align: center;
+    }
+}
+
