@@ -1,10 +1,11 @@
 body{
     background-color: #000;
+    background-image: url("../imgs/karen-zhao-jLRIsfkWRGo-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
-
 }
+
 main{
     width: 70%;
     margin: auto;
@@ -87,7 +88,7 @@ h2:before{
     width: 25%;
     height: 1px;
     bottom: -5px;
-    border-bottom: 5px solid red;
+    border-bottom: 5px solid #C60A28;
 }
 article>a>.hover {
     display: none;
