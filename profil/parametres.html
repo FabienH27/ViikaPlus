@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Viika+ - Cinémas & Séries</title>
+        <meta charset="utf-8">
+        <link href="../styles/reset.css" rel="stylesheet">
+        <link href="../styles/stylePages.css" rel="stylesheet">
+        <link href="../styles/styleProfil.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600,700,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!--Navigation : https://codepen.io/sreisner/pen/yOOOjx -->
+            <nav>
+                <a class="nav-link item1" href="../index.html"><img src="../imgs/Logo_pages.png" alt="logo"></a>
+                <a class="nav-link nav-link-grow-up" href="../apropos.html">Qui sommes-nous ?</a>
+                <a class="nav-link nav-link-grow-up" href="../catalogue.html">Le catalogue</a>
+                    <div class="search-container item4">
+                        <form action="../Recherche.html">
+                            <input name="chercher" type="text" placeholder="Chercher...">
+                            <button type="submit"><img src="../imgs/Icones/search-24px.svg" alt="search"></button>
+                        </form>
+                        <a href="../profil/infos.html"><img src="../imgs/Icones/Account.png" alt="compte"></a>
+                        <a href="../profil/favoris.html"><img src="../imgs/Icones/Star.png" alt="favoris"></a>  
+                    </div>
+            </nav>
+        </header>
+        <main>
+            <h1>Profil Utilisateur</h1>
+            <aside>
+                <nav>
+                    <a href="infos.html"><img src="../imgs/Icones/Account.png" alt="compte">Mes informations</a>
+                    <a href="favoris.html"><img src="../imgs/Icones/Star.png" alt="compte">Favoris</a>
+                    <a class="active" href="parametres.html"><img src="../imgs/Icones/parametres.png" alt="compte">Paramètres</a>
+                </nav>
+            </aside>
+            <article>
+                <h2>Paramètres</h2>
+                <form action="parametres.html" method="POST">
+                    <h6>Activer les notifications</h6>
+                    <label class="switch" for="notif">
+                        <input type="checkbox" id="notif">
+                        <span class="slider round"></span>
+                    </label>
+                    <h6>Haute définition (HD)</h6>
+                    <label class="switch" for="hd">
+                          <input checked type="checkbox" id="hd">
+                          <span class="slider round"></span>
+                    </label>
+                    <h6>Me rappeler de faire une pause</h6>
+                    <label class="switch" for="pause">
+                          <input type="checkbox" id="pause">
+                          <span class="slider round"></span>
+                    </label>
+                </form>
+            </article>
+        </main>
+        <footer>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="#">Catalogue</a>
+                <a class="logo" href="#"><img src="../imgs/Logo.png" alt="logo"></a>
+                <a href="#">Mes favoris</a>
+                <a href="#">Qui sommes-nous ?</a>
+            </nav>
+            <nav>
+                <a href="https://twitter.com/home">
+                    <img src="../imgs/Networks/Twitter.png" alt="twitter">
+                </a>
+                <a href="https://www.facebook.com/">
+                    <img src="../imgs/Networks/facebook.png" alt="facebook">
+                </a>
+                <a href="https://www.youtube.com/?hl=fr&gl=FR">
+                    <img src="../imgs/Networks/YouTube.png" alt="youtube">
+                </a>
+            </nav>
+            <h4>© Viika, 2019. Tous droits réservés</h4>
+        </footer>
+    </body>
+</html>

@@ -5,6 +5,21 @@ body{
     background-repeat: no-repeat;
     font-family: 'Poppins', sans-serif;
 }
+
+header>nav>a:first-child>img{
+    width: 200px;
+}
+header>nav>a:nth-child(n+4)>img{
+    margin-top: 20px;
+    padding: 0 20px;
+    width: 40px;
+}
+header>nav>a:nth-child(n+4){
+    float: right;
+}
+
+
+
 /*Navigation : https://codepen.io/sreisner/pen/yOOOjx */
 .nav-link {
     font-weight: 200;
@@ -42,6 +57,32 @@ nav a {
 }
 
 /*recherche*/
+.search-container{
+    margin: 20px 20px;
+    float: right;
+}
+nav input[type=text] {
+    padding: 6px;
+    font-size: 17px;
+}
+input:not(hover){
+    background-color: #000;
+    border:solid 2px #666;
+    color: #666;
+    border-radius: 30px;
+}
+input:focus,button:focus{
+    outline: none;
+}
+input:focus{
+    border:solid 2px #C60A28;
+}
+button{
+    border: none;
+    width: 50px;
+    vertical-align: middle;
+    background-color: #000;
+}
 .search-container{
     margin: 20px 20px;
     float: right;

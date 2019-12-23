@@ -44,9 +44,16 @@ header>nav>a:nth-child(n+4){
 .nav-link-grow-up:hover::before {
     height: 5px;
 }
-main nav a{
-    display: inline;
+
+form{
+    display: inline-block;
 }
+header a>img{
+    vertical-align: middle;
+    margin-left: 40px;
+    width: 40px;    
+}
+
 
 header form img{
     width: 40px;
@@ -55,38 +62,39 @@ header form img{
 }
 header form img:hover{
     transition: 0.2s;
-
     background-color: #C60A28;
-
 }
 /*recherche*/
-.search-container{
+header .search-container{
     margin: 20px;
     float: right;
 }
-nav input[type=text] {
+header nav input[type=text] {
     padding: 6px;
     font-size: 17px;
 }
-input:not(hover){
+header input:not(hover){
     background-color: #000;
     border:solid 2px #666;
     color: #666;
     border-radius: 30px;
 }
-input:focus,button:focus{
+header input:focus,button:focus{
     outline: none;
 }
-input:focus{
+header input:focus{
     border:solid 2px #C60A28;
 }
-button{
+header button{
     border: none;
     width: 50px;
     vertical-align: middle;
     background-color: transparent;
 }
 
+main nav a{
+    display: inline;
+}
 /*------FOOTER------*/
 
 footer>nav:first-child>a>img{

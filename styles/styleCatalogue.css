@@ -33,6 +33,7 @@ section>article>h1{
     letter-spacing: .15em;
 }
 section>article button{
+    border: none;
     border-radius: 30px;
     margin-top: 25px;
     padding: 10px 25px;
