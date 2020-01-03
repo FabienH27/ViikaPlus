@@ -1,44 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Viika+ - Cinémas & Séries</title>
-        <meta charset="utf-8">
-        <link href="styles/style.css" rel="stylesheet">
-        <link href="styles/reset.css" rel="stylesheet">
-        <link href="styles/stylePages.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width">
-        <link href="imgs/Icones/IconeSite.png" rel="icon">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap" rel="stylesheet">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Un texte de 150 caractères maxi qui résume le contenu de la page"> <!--Facultative mais important pour les moteur de recherche-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--Utilisé par IE et Edge pour une compatibilité descendante-->
+		<title>Viika+ - Cinémas & Séries</title>
+		
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap" rel="stylesheet"><!--Ici tous les CSS nécessaires, genre les bibliothèques comme fontasome, bootstrap, les polices google fonts etc.-->
+		<link rel="stylesheet" href="styles/style.css"> <!--Le style des pages de ton site. Toujours en dernier pour faire de la surcharge-->
     </head>
+    
     <body>
         <header>
             <!--Navigation : https://codepen.io/sreisner/pen/yOOOjx -->
             <nav>
                 <a class="nav-link" href="index.html"><img src="imgs/Logo.png" alt="logo site"></a>
-                <a class="nav-link nav-link-grow-up" href="apropos.html">Qui sommes-nous ?</a>
-                <a class="nav-link nav-link-grow-up" href="catalogue.html">Le catalogue</a>
+                <a class="nav-link nav-link-grow-up" href="apropos.html">Qui sommes-nous ?</a><!--LIEN A AJOUTER-->   
+                <a class="nav-link nav-link-grow-up" href="">Le catalogue</a><!--LIEN A AJOUTER-->   
                 <div class="search-container">
                     <form action="Recherche.html">
                         <input name="chercher" type="text" placeholder="Chercher...">
                         <button type="submit"><img src="imgs/Icones/search-24px.svg" alt="search"></button>
                     </form>
-                    <a href="profil/infos.html"><img src="imgs/Icones/Account.png" alt="compte"></a>
-                    <a href="profil/favoris.html"><img src="imgs/Icones/Star.png" alt="favoris"></a>                        
+                    <a href=""><img src="imgs/Icones/Account.png" alt="compte"></a><!--LIEN A AJOUTER-->
+                    <a href=""><img src="imgs/Icones/Star.png" alt="favoris"></a><!--LIEN A AJOUTER-->                     
                 </div>
-                <!--<a href="Recherche.html"></a>--> 
             </nav>
         </header>
-        <main>
-            <img src="imgs/Logo.png" alt="logo site">
-            <h1>Nouveautés</h1>
-            <section>
-                <h2>Les nouveautés du catalogue ! </h2>
-                <img src="imgs/Séries/Posters/chernobyl.jpg" alt="chernobyl">
-            </section>
-            <h1>Recommandations</h1>
-            <section>
-                <h2>Test</h2>
-            </section>        
+        <main id="index">
+            <h1><img src="imgs/Logo.png" alt="logo site"></h1> <!-- J'ai le droit de faire ceci ?-->
         </main>
         <footer>
             <nav>
@@ -49,13 +41,13 @@
                 <a href="apropos.html">Qui sommes-nous ?</a>
             </nav>
             <nav>
-                <a href="https://twitter.com/home">
+                <a href="https://twitter.com/home" target="_blank"> <!--target : -->
                     <img src="imgs/Networks/Twitter.png" alt="twitter">
                 </a>
-                <a href="https://www.facebook.com/">
+                <a href="https://www.facebook.com/" target="_blank">
                     <img src="imgs/Networks/facebook.png" alt="facebook">
                 </a>
-                <a href="https://www.youtube.com/?hl=fr&gl=FR">
+                <a href="https://www.youtube.com/?hl=fr&gl=FR" target="_blank">
                     <img src="imgs/Networks/YouTube.png" alt="youtube">
                 </a>
             </nav>

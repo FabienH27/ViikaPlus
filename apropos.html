@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Viika+ - Cinémas & Séries</title>
-        <meta charset="utf-8">
-        <link href="styles/reset.css" rel="stylesheet">
-        <link href="styles/stylePages.css" rel="stylesheet">
-        <link href="styles/styleApropos.css" rel="stylesheet">
-        <link href="imgs/Icones/IconeSite.png" rel="icon">
-        <meta name="viewport" content="width=device-width">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600,700,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap" rel="stylesheet">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Site de streaming permettant de visionner des séries"> <!--Facultative mais important pour les moteur de recherche-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--Utilisé par IE et Edge pour une compatibilité descendante-->
+		<title>Viika+ - Cinémas & Séries</title>
+		
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap" rel="stylesheet"><!--Ici tous les CSS nécessaires-->
+		<link rel="stylesheet" href="styles/style.css"> <!--Le style des pages-->
     </head>
+
     <body>
         <header>
             <!--Navigation : https://codepen.io/sreisner/pen/yOOOjx -->
             <nav>
-                <a class="nav-link item1" href="index.html"><img src="imgs/Logo_pages.png" alt="logo"></a>
-                <a class="nav-link nav-link-grow-up" href="apropos.html">Qui sommes-nous ?</a>
-                <a class="nav-link nav-link-grow-up" href="catalogue.html">Le catalogue</a>
-                <div class="search-container item4">
+                <a class="nav-link" href="index.html"><img src="imgs/Logo.png" alt="logo site"></a>
+                <a class="nav-link nav-link-grow-up" href="">Qui sommes-nous ?</a><!--LIEN A AJOUTER-->   
+                <a class="nav-link nav-link-grow-up" href="">Le catalogue</a><!--LIEN A AJOUTER-->   
+                <div class="search-container">
                     <form action="Recherche.html">
                         <input name="chercher" type="text" placeholder="Chercher...">
                         <button type="submit"><img src="imgs/Icones/search-24px.svg" alt="search"></button>
                     </form>
-                    <a href="profil/infos.html"><img src="imgs/Icones/Account.png" alt="compte"></a>
-                    <a href="profil/favoris.html"><img src="imgs/Icones/Star.png" alt="favoris"></a>  
+                    <a href=""><img src="imgs/Icones/Account.png" alt="compte"></a><!--LIEN A AJOUTER-->
+                    <a href=""><img src="imgs/Icones/Star.png" alt="favoris"></a><!--LIEN A AJOUTER-->                     
                 </div>
             </nav>
         </header>
-        <main>     
+
+        <main id="about">     
             <h1>Un large choix de séries</h1>
-            <article>
-                <h3>Regardez vos séries favorites où et quand vous le souhaitez et sur le support de votre choix !</h3>
-            </article>
+            <section>
+                <h2>Regardez vos séries favorites où et quand vous le souhaitez et sur le support de votre choix !</h2>
+            </section>
             <div class="illustration">
-                <img src="imgs/VisuPC.png" alt="visuel site pc">
-                <img src="imgs/visuTEL.png" alt="visuel site tel">
+                <img src="imgs/VisuPC.png" alt="visuel site pc"><!--est-ce sémantique ?-->
+                <img src="imgs/visuTEL.png" alt="visuel site tel"><!--est-ce sémantique ?-->
                 <div class="redbar"></div>
             </div>
-            <h1>Les nouvelles séries diponibles</h1>
-            <article>
-                <h3>Dès leurs sorties. Soyez les premiers à les découvrir !</h3>
-            </article>
-            <h1>Des catégories pour chacun</h1>
-            <article>
-                <h5>Que vous préfériez les drames, l'action ou la science fiction. Vous êtes au bon endroit ! </h5>
+            <section>
+                <h3>Les nouvelles séries disponibles</h3><!-- Enchainement de balises h3 / h4 ? -->
+                <h4>Dès leurs sorties. Soyez les premiers à les découvrir !</h4><!-- Enchainement de balises h3 / h4 ? -->
+            </section>
+            <section>
+                <h3>Des catégories pour chacun</h3><!-- Enchainement de balises h3 / h4 ? -->
                 <article class="genre">
-                    <h6>drame</h6>
-                    <h6>action</h6>
-                    <h6>science-fiction</h6>
-                    <h6>policier</h6>
+                    <h4>Que vous préfériez les drames, l'action ou la science fiction. Vous êtes au bon endroit ! </h4><!-- Enchainement de balises h3 / h4 ? -->                
+                    <div>
+                        <p>drame</p>
+                        <p>action</p>
+                        <p>science-fiction</p>
+                        <p>policier</p>
+                    </div>
                 </article>
-            </article>
-            <h1>Une plateforme moderne</h1>
-            <div class="creators">
-                <div>
-                    <p>Créée en 2019 par :</p>
-                    <p>SADKI Wassim </p>
-                    <p> HANNON Fabien</p>
+            </section>
+            <section>
+                <h3>Une plate-forme moderne</h3>
+                <div class="creators">
+                    <article>
+                        <h4>Créée en 2019 par : </h4>
+                        <p>SADKI Wassim</p>
+                        <p>HANNON Fabien</p>
+                    </article>
+                    <aside>
+                        <img src="imgs/logoIUT.png" alt="logo iut amiens">
+                    </aside>
                 </div>
-                <div>
-                    <img src="imgs/logoIUT.png" alt="logo iut amiens">
-                </div>
-            </div>
+            </section>
         </main>
         <footer>
             <nav>

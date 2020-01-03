@@ -1,14 +1,23 @@
+/* --------- Global --------- */
+
 body{
     background-color: #000;
     background-image: url("../imgs/karen-zhao-jLRIsfkWRGo-unsplash.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
+}
+
+#about,header{
     font-family: 'Poppins', sans-serif;
 }
+
+/* ************************** */
+/* --------- HEADER --------- */
 
 header>nav>a:first-child>img{
     width: 200px;
 }
+
 header>nav>a:nth-child(n+4)>img{
     margin-top: 20px;
     padding: 0 20px;
@@ -17,22 +26,18 @@ header>nav>a:nth-child(n+4)>img{
 header>nav>a:nth-child(n+4){
     float: right;
 }
-
-
-
-/*Navigation : https://codepen.io/sreisner/pen/yOOOjx */
 .nav-link {
+    vertical-align: middle;
     font-weight: 200;
     font-size: 150%;
     text-transform: uppercase;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 20px 0;
-    margin: 15px 50px;
+    padding: 10px 0;
+    margin: 0 25px;
     display: inline-block;
     position: relative;
 }
-  
 .nav-link:hover {
     color: #C60A28;
 }
@@ -48,113 +53,147 @@ header>nav>a:nth-child(n+4){
     width: 100%;
     top: 0px;
 }
-  
+
 .nav-link-grow-up:hover::before {
     height: 5px;
 }
-nav a {
-    display: inline;
+form{
+    display: inline-block;
+}
+header a>img{
+    vertical-align: middle;
+    margin-left: 40px;
+    width: 40px;    
 }
 
-/*recherche*/
-.search-container{
-    margin: 20px 20px;
+header form img{
+    width: 40px;
+    padding: 10px;
+    border-radius: 40px;
+}
+header form img:hover{
+    transition: 0.2s;
+    background-color: #C60A28;
+}
+header .search-container{
+    margin: 20px;
     float: right;
 }
-nav input[type=text] {
+header nav input[type=text] {
     padding: 6px;
     font-size: 17px;
 }
-input:not(hover){
+header input:not(hover){
     background-color: #000;
     border:solid 2px #666;
     color: #666;
     border-radius: 30px;
 }
-input:focus,button:focus{
+header input:focus,button:focus{
     outline: none;
 }
-input:focus{
+header input:focus{
     border:solid 2px #C60A28;
 }
-button{
+header button{
     border: none;
     width: 50px;
     vertical-align: middle;
-    background-color: #000;
+    background-color: transparent;
 }
-.search-container{
-    margin: 20px 20px;
-    float: right;
+/* --------------- */
+/* ************ INDEX ************ */
+#index h1{
+    text-align: center;
 }
-nav input[type=text] {
-    padding: 6px;
-    font-size: 17px;
-}
-input:not(hover){
-    background-color: #000;
-    border:solid 2px #666;
-    color: #666;
-    border-radius: 30px;
-}
-input:focus,button:focus{
-    outline: none;
-}
-input:focus{
-    border:solid 2px #C60A28;
-}
-button{
-    border: none;
-    width: 50px;
-    vertical-align: middle;
-    background-color: #000;
-}
-/**/
-header{
-    background-color : #000;
-    position: sticky;
-    top: 0px;
-}
-main{
-    max-width: 1300px;
-    margin: auto;
-}
-main img:first-child{
-    display: block;
+#index>h1>img{
     width: 500px;
-    margin: 180px auto 650px auto;
+    margin-top: 180px;
 }
-h1 {
-    font-weight: 700;
-    display: inline-block;
-    padding-bottom: 5px;
-    position: relative;
-    color: #FFF;
+
+/* ************************ */
+
+/* ************ ABOUT ************ */
+
+#about h1,h3{
+    color: #C60A28;
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+    margin-top: 150px;
 }
-h1:first-of-type::after{
-    content: url("../imgs/Star.svg");
-    display: inline-block;
-    width: 20px;
+
+#about h2,h4{
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
 }
-h1:before{
-    content: "";
-    position: absolute;
-    width: 25%;
-    height: 1px;
-    bottom: 0;
-    border-bottom: 5px solid red;
+
+#about h4{
+    color: #fff;
+    text-align: center;
 }
-h2,h3{
-    margin-top: 0;
-    color: #FFF;
-    font-weight: 200;
+.genre p{
+    font-variant: small-caps;
+    color: #777;
+    font-size: 40px;
 }
-section>img{
-    float: right;
-    width: 50%;
+
+.creators{
+    color: #fff;
+    text-align: center;
 }
+
+
+/* ************************ */
+@media screen and (max-width:768px){
+    .illustration img:first-of-type{
+        width: 100%;
+    }
+    .illustration img:nth-of-type(2){
+        width: 40%;
+        margin: auto;
+    }
+    .illustration{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1199px){
+    .creators{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .genre{
+        text-align: center;
+    }
+}
+
 
 @media screen and (min-width:1200px){
+    .redbar{
+        margin-top: 450px;
+        width: 100%;
+        height: 200px;
+        background-color: #C60A28;
+    }
+        
+    .illustration>img:first-of-type{
+        width: 800px;
+        position: absolute;
+        top: 450px;
+        left: 150px;
+    }
+    .illustration>img:nth-of-type(2){
+        position: absolute;
+        top: 450px;
+        right: 300px;
+    }
+    .genre div{
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }   
     footer{
         text-align: center;   
     }
@@ -167,4 +206,53 @@ section>img{
     footer>nav:nth-child(2){
         padding-left: 20px;
     }
+    .creators{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        width: 50%;
+        margin: auto;
+    }
+    .creators p{
+        display: inline;
+        font-size: 20px;
+    }
+    .creators p:nth-of-type(1)::after{
+        content : " // ";
+        font-weight: 800;
+        color: #C60A28;
+    }
 }
+
+
+/*------FOOTER------*/
+
+footer>nav:first-child>a>img{
+    width: 130px;
+}
+footer>nav:nth-child(2)>a>img{
+    width: 50px;
+}
+footer{
+    background-color: #000;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 300px;
+    padding-top: 10px;
+}
+footer>nav>a{
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+footer>h4{
+    padding-top: 10px;
+    text-align: center;
+    border-top: solid 1px #565656;
+    font-weight: 300;
+    color: #565656;
+}
+footer>nav:nth-child(2) img:hover{
+    transition: 0.2s;
+    border-radius: 50px;
+    background-color: #C60A28;
+}
+/* --------------- */
