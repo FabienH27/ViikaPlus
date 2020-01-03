@@ -6,6 +6,7 @@
         <link href="../styles/reset.css" rel="stylesheet">
         <link href="../styles/styleEpisode.css" rel="stylesheet">
         <link href="../styles/stylePages.css" rel="stylesheet">
+        <link rel="icon" href="../imgs/Icones/IconeSite.png">
         <meta name="viewport" content="width=device-width">
         <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
@@ -17,6 +18,7 @@
             <nav>
                 <a class="nav-link item1" href="../index.html"><img src="../imgs/Logo_pages.png" alt="logo"></a>
                 <a class="nav-link nav-link-grow-up item2" href="../apropos.html">Qui sommes-nous ?</a>
+                <a class="nav-link nav-link-grow-up" href="../catalogue.html">Le catalogue</a>
                 <div class="search-container item4">
                     <form action="../Recherche.html">
                         <input name="chercher" type="text" placeholder="Chercher...">
@@ -24,7 +26,6 @@
                     </form>
                     <a href="../profil/infos.html"><img src="../imgs/Icones/Account.png" alt="compte"></a>
                     <a href="../profil/favoris.html"><img src="../imgs/Icones/Star.png" alt="favoris"></a> 
-                    </form>
                 </div>
             </nav>
         </header>
@@ -134,24 +135,22 @@
                         </select>
                     </div>
                 </section>
-                <section class="videoplayer">
+                <div class="videoplayer">
                     <video src="../videos/mrRobotVideo.mp4" controls poster="../imgs/Previsualisation/mrRobot.jpg">
-                        <p>Votre navigateur ne prend pas en charge les vidéos HTML5. Voici, à la place, un <a href="../videos/ChernobylVideo.mp">lien vers la vidéo</a>.</p> 
+                        <p>Votre navigateur ne prend pas en charge les vidéos HTML5. Voici, à la place, un <a href="../videos/mrRobotVideo.mp4">lien vers la vidéo</a>.</p> 
                     </video>
-                </section>
+                </div>
             </div>
             <section class="comments">
                 <h4>3 commentaires</h4>
                 <div>
                     <div id="grid">
-                        <aside><img src="../imgs/Icones/Account.png"></aside>
-                        <article>
-                            <form action="#">
+                        <aside><img src="../imgs/Icones/Account.png" alt="compte"></aside>
+                        <form action="#">
                             <textarea placeholder="ajouter un commentaire" rows="5" cols="33"></textarea>
                             <button type="submit">Envoyer</button>
-                            </form>
-                        </article>
-                        <aside><img src="../imgs/Icones/profile.png"></aside>
+                        </form>
+                        <aside><img src="../imgs/Icones/profile.png" alt="profil"></aside>
                         <article>
                             <h5>Utilisateur</h5>
                             <h6>Il y a 1 heure</h6>
@@ -163,19 +162,19 @@
                                 <label for="toggle2"></label>
                             </span>
                         </article>
-                        <aside class="reponse"><img src="../imgs/Icones/profile.png"></aside>
+                        <aside class="reponse"><img src="../imgs/Icones/profile.png" alt="profil"></aside>
                         <article class="reponse">
                             <h5>Utilisateur</h5>
                             <h6>Il y a 30 minutes</h6>
-                            <p>Lorem ipsum dolor sit amet, no eirmod fuisset pri. Regione aliquando ad quo, congue elaboraret quaerendum ea ius,
-                            an detraxit mediocritatem pro. At nullam admodum scripserit his, placerat menandri cu est, oblique quaestio delicata pro id.</p>
+                            <p>Ut vim vero quando phaedrum, per ei soleat legimus impedit, duis nullam mel et. Vulputate temporibus ne nec, facer maiorum ei sit. 
+                            Timeam senserit conceptam an sit.</p>
                             <button type="submit" class="reply">Répondre</button>
                             <span class="aime">
                                 <input id="toggle3" type="checkbox">
                                 <label for="toggle3"></label>
                             </span>
                         </article>
-                        <aside><img src="../imgs/Icones/profile.png"></aside>
+                        <aside><img src="../imgs/Icones/profile.png" alt="profile"></aside>
                         <article>
                             <h5>Utilisateur</h5>
                             <h6>Il y a 2 jours</h6>

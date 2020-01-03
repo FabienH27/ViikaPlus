@@ -6,6 +6,7 @@
         <link href="styles/styleRecherche.css" rel="stylesheet">
         <link href="styles/reset.css" rel="stylesheet">
         <link href="styles/stylePages.css" rel="stylesheet">
+        <link rel="icon" href="imgs/Icones/IconeSite.png">
         <meta name="viewport" content="width=device-width">
         <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
@@ -19,12 +20,12 @@
                 <a class="nav-link nav-link-grow-up item2" href="apropos.html">Qui sommes-nous ?</a>
                 <a class="nav-link nav-link-grow-up item2" href="catalogue.html">Le catalogue</a>
                 <div class="search-container item4">
-                    <form action="Recherche.html">
-                            <input name="chercher" type="text" placeholder="Chercher...">
-                            <button type="submit"><img src="imgs/Icones/search-24px.svg" alt="search"></button>
-                            <button><img src="imgs/Icones/Star.png" alt="favoris"></button>
-                            <button><img src="imgs/Icones/Account.png" alt="compte"></button>
+                    <form action="../Recherche.html">
+                        <input name="chercher" type="text" placeholder="Chercher...">
+                        <button type="submit"><img src="imgs/Icones/search-24px.svg" alt="search"></button>
                     </form>
+                    <a href="../profil/infos.html"><img src="imgs/Icones/Account.png" alt="compte"></a>
+                    <a href="../profil/favoris.html"><img src="imgs/Icones/Star.png" alt="favoris"></a> 
                 </div>
             </nav>
         </header>
@@ -49,7 +50,7 @@
                 </article>
                 <article>
                     <h3>
-                        <a>
+                        <a href="Séries/mrRobot.html">
                             <img src="imgs/Séries/Posters/PeakyBlinders.png" alt="PeakyBlinders">  
                             <img src="imgs/Séries/hover/PeakyBlindersHover.png" class="hover" alt="PeakyBlinders">   
                         </a>
@@ -57,7 +58,7 @@
                 </article>
                 <article>
                     <h3>
-                        <a href="">
+                        <a href="Séries/mrRobot.html">
                             <img src="imgs/Séries/Posters/TheMandalorian.png" alt="TheMandalorian">   
                             <img src="imgs/Séries/hover/TheMandalorianHover.png" class="hover" alt="TheMandalorian"> 
                         </a>
@@ -65,7 +66,7 @@
                 </article>
                 <article>
                     <h3>
-                        <a href="">
+                        <a href="Séries/mrRobot.html">
                             <img src="imgs/Séries/Posters/Sherlock.png" alt="Sherlock"> 
                             <img src="imgs/Séries/hover/SherlockHover.png" class="hover" alt="Sherlock">  
                         </a>
@@ -73,7 +74,7 @@
                 </article>          
                 <article>
                     <h3>
-                        <a href="">
+                        <a href="Séries/mrRobot.html">
                             <img src="imgs/Séries/Posters/BlackMirror.png" alt="BlackMirror"> 
                             <img src="imgs/Séries/hover/BlackMirrorHover.png" class="hover" alt="BlackMirror"> 
                         </a>
@@ -81,7 +82,7 @@
                 </article>
                 <article>
                     <h3>
-                        <a href="">
+                        <a href="Séries/mrRobot.html">
                             <img src="imgs/Séries/Posters/TheWitcher.png" alt="TheWitcher"> 
                             <img src="imgs/Séries/hover/TheWitcherHover.png" class="hover" alt="TheWitcher">  
                         </a>  
@@ -89,7 +90,7 @@
                 </article>
                 <article>
                     <h3>
-                        <a href="">
+                        <a href="Séries/mrRobot.html">
                             <img src="imgs/Séries/Posters/watchmen.png" alt="watchmen"> 
                             <img src="imgs/Séries/hover/WatchmenHover.png" class="hover" alt="watchmen">   
                         </a>
@@ -97,7 +98,7 @@
                 </article>
                 <article>
                     <h3>
-                        <a href="">
+                        <a href="Séries/mrRobot.html">
                             <img src="imgs/Séries/Posters/Bodyguard.png" alt="Bodyguard"> 
                             <img src="imgs/Séries/hover/BodyguardHover.png" class="hover" alt="Bodyguard">  
                         </a>
@@ -105,7 +106,7 @@
                 </article>
                 <article>
                     <h3>
-                        <a href="">
+                        <a href="Séries/mrRobot.html">
                             <img src="imgs/Séries/Posters/GOT.png" alt="GOT"> 
                             <img src="imgs/Séries/hover/GOTHover.png" class="hover" alt="GOT"> 
                         </a>
@@ -113,7 +114,7 @@
                 </article>
                 <article>
                     <h3>
-                        <a href="">
+                        <a href="Séries/mrRobot.html">
                             <img src="imgs/Séries/Posters/DansLeurRegard.png" alt="DansLeurRegard"> 
                             <img src="imgs/Séries/hover/DansLeurRegardHover.png" class="hover" alt="DansLeurRegard"> 
                         </a>  
@@ -121,7 +122,7 @@
                 </article>
                 <article>
                     <h3>
-                        <a href="">
+                        <a href="Séries/mrRobot.html">
                             <img src="imgs/Séries/Posters/BreakingBad.png" alt="BreakingBad"> 
                             <img src="imgs/Séries/hover/BreakingBadHover.png" class="hover" alt="BreakingBad"> 
                         </a>                       
@@ -132,10 +133,10 @@
         <footer>
                 <nav>
                     <a href="index.html">Accueil</a>
-                    <a href="#">Catalogue</a>
-                    <a class="logo" href="#"><img src="imgs/Logo.png" alt="logo"></a>
-                    <a href="#">Mes favoris</a>
-                    <a href="#">Qui sommes-nous ?</a>
+                    <a href="catalogue.html">Catalogue</a>
+                    <a class="logo" href="index.html"><img src="imgs/Logo.png" alt="logo"></a>
+                    <a href="profil/favoris.html">Mes favoris</a>
+                    <a href="apropos.html">Qui sommes-nous ?</a>
                 </nav>
                 <nav>
                     <a href="https://twitter.com/home">

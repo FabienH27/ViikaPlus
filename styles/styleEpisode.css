@@ -233,7 +233,27 @@ textarea+button:hover{
     background-color: #C60A28;   
     color: #fff;
 }
-
+#grid article button{
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+#grid article button:hover{
+    color: #C60A28;
+}
+.reply::before{
+    content: url("../imgs/Icones/reply.png");
+}
+.reponse{
+    margin-left:80px;
+}
+#grid article,aside{
+    margin-top: 50px;
+}
+#grid aside:first-of-type+form>textarea{
+    width: 100%;
+}
 
 @media screen and (min-width : 1500px){
     main>div:first-of-type{
@@ -262,7 +282,7 @@ textarea+button:hover{
         width: 97%;
     }
     .intro>p{
-        max-width: 500px;
+        max-width: 600px;
     }
     footer{
         text-align: center;   
@@ -305,24 +325,6 @@ textarea+button:hover{
         width: 600px;
         font-weight: 200;
     }
-    #grid article:nth-of-type(n+2) button{
-        cursor: pointer;
-        background-color: #000;
-        color: #fff;
-        border: none;
-    }
-    #grid article:nth-of-type(n+2) button:hover{
-        color: #C60A28;
-    }
-    .reply::before{
-        content: url("../imgs/Icones/reply.png");
-    }
-    .reponse{
-        margin-left:80px;
-    }
-    #grid article,aside{
-        margin-top: 50px;
-    }
 }
 @media screen and (min-width: 1201px) and (max-width:1499px){
     main>div:first-of-type{
@@ -364,14 +366,41 @@ textarea+button:hover{
     footer>nav:nth-child(2){
         text-align: center;
     }
+    #grid{
+        margin:auto;
+        width: 50%;
+        display: grid;
+        grid-template-columns: minmax(max-content, 100px) minmax(200px, 1fr);
+    }
+    #grid article{
+        grid-column: 2;
+    }
+    #grid article>form>textarea{
+        padding: 10px;
+    }
+    #grid article>form>textarea{
+        width: 500px;
+    }
+    #grid article>form>textarea+button{
+        float: right;
+    }
+    #grid aside>img{
+        width: 80px;
+    }
+    #grid p:first-of-type{
+        width: 600px;
+        font-weight: 200;
+    }
 }
 
 @media screen and (max-width : 1199px){
     main>div:first-of-type{
         display: grid;
         grid-template-rows: 1fr;
+        margin: auto;
     }
     .videoplayer{
+        margin-top: 100px;
         grid-row: 1;
     }
     .videoplayer video{
@@ -417,6 +446,20 @@ textarea+button:hover{
     }
     footer>nav:nth-child(2){
         text-align: center;
+    }
+    #grid{
+        display: grid;
+        grid-template-columns: minmax(max-content, 10px) minmax(50px, max-content);
+    }
+    #grid article,#grid aside{
+        margin: auto 0;
+    }
+    #grid .reponse{
+        margin-left: 80px;
+    }
+    #grid aside:first-of-type img{
+        width: 100px;
+        margin: auto;
     }
 }
 @media screen and (max-width:999px){
