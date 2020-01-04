@@ -7,9 +7,15 @@ body{
     background-repeat: no-repeat;
 }
 
-#about,header{
+#about,header,#catalogue{
     font-family: 'Poppins', sans-serif;
 }
+
+#catalogue{
+    width: 70%;
+    margin: auto;
+}
+
 
 /* ************************** */
 /* --------- HEADER --------- */
@@ -21,7 +27,6 @@ header>nav>a:first-child>img{
 header>nav>a:nth-child(n+4)>img{
     margin-top: 20px;
     padding: 0 20px;
-    width: 40px;
 }
 header>nav>a:nth-child(n+4){
     float: right;
@@ -29,7 +34,6 @@ header>nav>a:nth-child(n+4){
 .nav-link {
     vertical-align: middle;
     font-weight: 200;
-    font-size: 150%;
     text-transform: uppercase;
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -62,12 +66,10 @@ form{
 }
 header a>img{
     vertical-align: middle;
-    margin-left: 40px;
-    width: 40px;    
+    margin-left: 40px;  
 }
 
 header form img{
-    width: 40px;
     padding: 10px;
     border-radius: 40px;
 }
@@ -115,7 +117,7 @@ header button{
 
 /* ************ ABOUT ************ */
 
-#about h1,h3{
+#about h1, #about h3{
     color: #C60A28;
     text-align: center;
     font-weight: 900;
@@ -123,7 +125,7 @@ header button{
     margin-top: 150px;
 }
 
-#about h2,h4{
+#about h2,#about h4{
     color: #fff;
     text-align: center;
     font-weight: 400;
@@ -143,20 +145,187 @@ header button{
     color: #fff;
     text-align: center;
 }
+/* ************************ */
+
+/* ************ CATALOGUE ************ */
+
+.tendance{
+    font-family: 'Poppins', sans-serif;
+    background-image: url("../imgs/Séries/Catalogue/tendance.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center; 
+    height: 400px;
+    color: #fff;
+    font-variant: small-caps;
+    padding-left: 40px;
+}
+.tendance>h1{
+    padding-top: 80px;
+    font-weight: 400;
+    letter-spacing: .2em;
+    font-size: 15px;
+}
+.tendance>h2{
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: .15em;
+    font-size: 90px;
+}
+
+.tendance button{
+    border: none;
+    border-radius: 30px;
+    margin-top: 25px;
+    padding: 10px 25px;
+    font-weight: 600;
+    letter-spacing: .1em;
+    background-color: #fff;
+    width: auto;
+    font-size: 30px;
+    font-variant: small-caps;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: .2s;
+}
+/* https://codepen.io/LeoPragi/pen/gzrGoG */
+.tendance button:hover{
+    box-shadow: 0px 15px 20px rgba(0,0, 0, .5);
+    background-color: #C60A28;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+#catalogue section>div{
+    margin-top: 100px;
+    background-color: #080808;
+    border-radius: 20px;
+}
+
+.container h3{
+    position: relative;
+    color: #fff;
+    display: inline-block;
+    margin: 20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+#catalogue h4{
+    margin-top: 150px;
+    color: #fff;
+    font-size: 25px;
+}
+.container>a{
+    text-decoration: none;
+    color: #C60A28;
+    float: right;
+    margin: 15px 20px 0 0;
+    font-weight: 400;
+    transition: .2s;
+    font-size: 13px;
+}
+.container a:hover{
+    color: #fff;
+}
+#catalogue h3:before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 1px;
+    bottom: -5px;
+    border-bottom: 5px solid #C60A28;
+}
+.flex div>a>.hover{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.flex div{
+    position: relative;
+}
+.flex div:hover .hover{
+    box-shadow: 0px 15px 20px rgba(0,0, 0, .5);
+    display: inline;
+}
+.flex div:hover a>img:first-of-type{
+    visibility: hidden;
+}
 
 
 /* ************************ */
-@media screen and (max-width:768px){
+
+
+/* ************************ */
+@media screen and (max-width:992px){
+    /* header */
+    .nav-link{
+        font-size: 120%;
+    }
+    nav img{
+        width: 40px;
+    }
+    .search-container form{
+        margin-right: 100px;
+    }
+    /* a propos */
     .illustration img:first-of-type{
         width: 100%;
     }
     .illustration img:nth-of-type(2){
-        width: 40%;
         margin: auto;
     }
     .illustration{
         text-align: center;
     }
+    /* catalogue */
+    .tendance h2{
+        font-size: 300%;
+    }
+    .tendance{
+        margin-top: 150px;
+    }
+
+    .container img{
+        width:200px;
+    }
+    .nouveautes,.action{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .drames{
+        display: grid;
+        grid-template-columns:1fr;
+    }
+    .categorie{
+        display: grid;
+        grid-template-columns:1fr;
+        gap: 100px;
+    }
+    .sf{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .flex div   {    
+        margin: 20px auto;
+    }
+    /* footer */
+    footer>nav:first-child{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;       
+    }
+    footer>nav>a{
+        line-height: 2.5em;
+        grid-template-columns:1fr;
+        margin: 0 auto;  
+        text-align: center;     
+    }
+    footer>nav:nth-child(2){
+        text-align: center;
+    }
+
 }
 
 @media screen and (max-width:1199px){
@@ -169,8 +338,54 @@ header button{
     }
 }
 
+@media screen and (max-width:1199px) and (min-width:993px){
+    footer a{
+        font-size: 15px;
+        padding-left: 50px;
+    }
+    footer{
+        text-align: center;
+        margin: auto;
+    }
+    .container img{
+        width:200px;
+        margin: auto;
+    }
+    .container{
+        margin: 50px;
+    }
+    .nouveautes,.action,.drames,.sf{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .flex div{
+        margin: auto;
+    }
+    /* header */
+    .nav-link{
+        font-size: 120%;
+    }
+    nav img{
+        width: 40px;
+    }
+    .search-container form{
+        margin-right: 200px;
+    }
+    .tendance{
+        margin-top: 150px;
+    }
+}
 
-@media screen and (min-width:1200px){
+
+@media screen and (min-width:1199px){
+    /* header */
+    .nav-link{
+        font-size: 120%;
+    }
+    nav img{
+        width: 40px;
+    }
+
     .redbar{
         margin-top: 450px;
         width: 100%;
@@ -186,6 +401,7 @@ header button{
     }
     .illustration>img:nth-of-type(2){
         position: absolute;
+        width: 200px;
         top: 450px;
         right: 300px;
     }
@@ -221,6 +437,39 @@ header button{
         font-weight: 800;
         color: #C60A28;
     }
+    /* catalogue */
+    #catalogue .container img{
+        width: 150px;
+    }
+    .flex img,.hover{
+        width: 150px;
+    }
+    .nouveautes,.action{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .nouveautes div, .action div{
+        margin: 30px auto;
+    }
+    .drames{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .drames div{
+        margin: 30px auto;
+    }
+    .categorie{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 100px;
+    }
+    .sf{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .sf div{    
+        margin: 20px auto;
+    }
 }
 
 
@@ -239,7 +488,6 @@ footer{
     padding-top: 10px;
 }
 footer>nav>a{
-    font-size: 20px;
     color: #fff;
     text-decoration: none;
 }

@@ -1,74 +1,75 @@
-<!-- ********************************** PAGE NON MODIFIE ********************************** -->
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <title>Viika+ - Cinémas & Séries</title>
-        <meta charset="utf-8">
-        <link href="styles/reset.css" rel="stylesheet">
-        <link href="styles/stylePages.css" rel="stylesheet">
-        <link href="styles/styleCatalogue.css" rel="stylesheet">
-        <link href="imgs/Icones/IconeSite.png" rel="icon">
-        <meta name="viewport" content="width=device-width">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,600,700,900&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap" rel="stylesheet">
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Site de streaming permettant de visionner des séries"> <!--Facultative mais important pour les moteur de recherche-->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--Utilisé par IE et Edge pour une compatibilité descendante-->
+		<title>Viika+ - Cinémas & Séries</title>
+		
+        <link rel="stylesheet" href="styles/normalize.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap" rel="stylesheet"><!--Ici tous les CSS nécessaires-->
+		<link rel="stylesheet" href="styles/style.css"> <!--Le style des pages-->
     </head>
+
     <body>
         <header>
             <!--Navigation : https://codepen.io/sreisner/pen/yOOOjx -->
             <nav>
                 <a class="nav-link" href="index.html"><img src="imgs/Logo.png" alt="logo site"></a>
-                <a class="nav-link nav-link-grow-up" href="apropos.html">Qui sommes-nous ?</a>
-                <a class="nav-link nav-link-grow-up" href="catalogue.html">Le catalogue</a>
+                <a class="nav-link nav-link-grow-up" href="apropos.html">Qui sommes-nous ?</a> 
+                <a class="nav-link nav-link-grow-up" href="catalogue.html">Le catalogue</a>  
                 <div class="search-container">
                     <form action="Recherche.html">
                         <input name="chercher" type="text" placeholder="Chercher...">
                         <button type="submit"><img src="imgs/Icones/search-24px.svg" alt="search"></button>
                     </form>
-                    <a href="profil/infos.html"><img src="imgs/Icones/Account.png" alt="compte"></a>
-                    <a href="profil/favoris.html"><img src="imgs/Icones/Star.png" alt="favoris"></a>                        
+                    <a href=""><img src="imgs/Icones/Account.png" alt="compte"></a><!--LIEN A AJOUTER-->
+                    <a href=""><img src="imgs/Icones/Star.png" alt="favoris"></a><!--LIEN A AJOUTER-->                     
                 </div>
-                <!--<a href="Recherche.html"></a>--> 
             </nav>
         </header>
-        <main>     
-            <div>
-                <article>
-                    <!--En tendance-->
-                    <h4>2019 - lauren schmidt hissrich</h4>
-                    <h1>the witcher</h1>
-                    <form action="Séries/mrRobot.html">
-                        <button name="visualiser" type="submit" value="regarder">regarder</button>
-                    </form>
-                </article>
-            </div>
-            <section>
-                <a href="#"><h5>voir tout ></h5></a>
-                <h2>Nouveaux contenus</h2>
-                <div class="nouveautes horizontal-scroll-wrapper squares">
-                    <div>
-                        <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/mrRobot.png" alt="mrRobot">
-                        <img src="imgs/Séries/Affiches/hover/mrrobotHover.png" class="hover" alt="mrRobot"></a>
-                    </div>
-                    <div>
-                        <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/Peaky_Blinders.png" alt="Peaky_Blinders">
-                        <img src="imgs/Séries/Affiches/hover/peakyHover.png" class="hover" alt="Peaky_Blinders"></a>
-                    </div>
-                    <div>
-                        <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/sherlock.png" alt="sherlock">
-                        <img src="imgs/Séries/Affiches/hover/sherlockHover.png"  class="hover" alt="sherlock"></a>
-                    </div>
-                    <div>
-                        <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/blackMirror.png" alt="blackMirror">
-                        <img src="imgs/Séries/Affiches/hover/blackMirrorHover.png" class="hover" alt="blackMirror"></a>
+
+        <main id="catalogue">    
+            <section class="tendance">
+                <h1>2019 - lauren schmidt hissrich</h1>
+                <h2>the witcher</h2>
+                <form action="Recherche.html" method="GET">
+                    <button name="visualiser" type="submit" value="regarder">regarder</button>
+                </form>
+            </section>
+            
+            <section class="categorie-nouveautes">
+                <div class="container">
+                    <h3>Nouveaux contenus</h3>
+                    <a href="">voir tout ></a>
+                    <div class="nouveautes flex">
+                        <div>
+                            <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/mrRobot.png" alt="mrRobot">
+                            <img src="imgs/Séries/Affiches/hover/mrrobotHover.png" class="hover" alt="mrRobot"></a>
+                        </div>
+                        <div>
+                            <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/Peaky_Blinders.png" alt="Peaky_Blinders">
+                            <img src="imgs/Séries/Affiches/hover/peakyHover.png" class="hover" alt="Peaky_Blinders"></a>
+                        </div>
+                        <div>
+                            <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/sherlock.png" alt="sherlock">
+                            <img src="imgs/Séries/Affiches/hover/sherlockHover.png"  class="hover" alt="sherlock"></a>
+                        </div>
+                        <div>
+                            <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/blackMirror.png" alt="blackMirror">
+                            <img src="imgs/Séries/Affiches/hover/blackMirrorHover.png" class="hover" alt="blackMirror"></a>
+                        </div>                   
                     </div>
                 </div>
             </section>
-            <h3>Toutes les séries</h3>
-            <div class="categorie">
-                <section>
-                    <a href="#"><h5>voir tout ></h5></a>
-                    <h2>Drames</h2>
-                    <div class="drames">
+            <h4>Toutes les séries</h4>
+
+            <section class="categorie">
+                <div class="container">
+                    <h3>Drames</h3>
+                    <a href="">voir tout ></a> 
+                    <div class="drames flex">
                         <div>
                             <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/mrRobot.png" alt="mrRobot">
                             <img src="imgs/Séries/Affiches/hover/mrrobotHover.png" class="hover" alt="mrRobot"></a>
@@ -107,18 +108,18 @@
                         </div>
                         <div>
                             <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/westworld.png" alt="westworld">
-                                <img src="imgs/Séries/Affiches/hover/westworldHover.png" class="hover"  alt="westworld"></a>
+                            <img src="imgs/Séries/Affiches/hover/westworldHover.png" class="hover"  alt="westworld"></a>
                         </div>
                         <div>
                             <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/strangerThings.png" alt="strangerThings">
                             <img src="imgs/Séries/Affiches/hover/strangethingshover.png" class="hover"  alt="strangerThings"></a>
                         </div>
-                    </div  >
-                </section>
-                <section>
-                    <a href="#"><h5>voir tout ></h5></a>
-                    <h2>Science-fiction</h2>
-                    <div class="sf">
+                    </div>
+                </div>
+                <div class="categorie-science-fiction container">
+                    <h3>Science-fiction</h3>   
+                    <a href="">voir tout ></a>
+                    <div class="sf flex">
                         <div>
                             <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/mrRobot.png" alt="mrRobot">
                             <img src="imgs/Séries/Affiches/hover/mrrobotHover.png" class="hover" alt="mrRobot"></a>
@@ -136,31 +137,35 @@
                                 <img src="imgs/Séries/Affiches/hover/watchmenHover.png" class="hover"  alt="watchmen"></a>
                         </div>
                     </div>
-                </section>
-            </div>
-            <section>
-                <a href="#"><h5>voir tout ></h5></a>
-                <h2>Action</h2>
-                <div class="action">
-                    <div>
-                        <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/casadepapel.png" alt="watchmen">
-                            <img src="imgs/Séries/Affiches/hover/casadepapelHover.png" class="hover" alt="watchmen"></a>
+                </div>
+            </section>
+
+            <section class="categorie-action">
+                <div class="container">
+                    <h3>Action</h3>
+                    <a href="">voir tout ></a>
+                    <div class="action flex">
+                        <div>
+                            <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/casadepapel.png" alt="watchmen">
+                                <img src="imgs/Séries/Affiches/hover/casadepapelHover.png" class="hover" alt="watchmen"></a>
+                        </div>
+                        <div>
+                            <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/mandalorian.png" alt="watchmen">
+                                <img src="imgs/Séries/Affiches/hover/mandalorianHover.png" class="hover" alt="watchmen"></a>
+                        </div>
+                        <div>
+                            <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/Peaky_Blinders.png" alt="watchmen">
+                                <img src="imgs/Séries/Affiches/hover/peakyHover.png" class="hover" alt="watchmen"></a>
+                        </div>
+                        <div>
+                            <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/breakingbad.png" alt="watchmen">
+                                <img src="imgs/Séries/Affiches/hover/breakingbadHover.png" class="hover" alt="watchmen"></a>
+                        </div>    
                     </div>
-                    <div>
-                        <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/mandalorian.png" alt="watchmen">
-                            <img src="imgs/Séries/Affiches/hover/mandalorianHover.png" class="hover" alt="watchmen"></a>
-                    </div>
-                    <div>
-                        <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/Peaky_Blinders.png" alt="watchmen">
-                            <img src="imgs/Séries/Affiches/hover/peakyHover.png" class="hover" alt="watchmen"></a>
-                    </div>
-                    <div>
-                        <a href="Séries/mrRobot.html"><img src="imgs/Séries/Affiches/breakingbad.png" alt="watchmen">
-                            <img src="imgs/Séries/Affiches/hover/breakingbadHover.png" class="hover" alt="watchmen"></a>
-                    </div>    
                 </div>
             </section>
         </main>
+
         <footer>
             <nav>
                 <a href="index.html">Accueil</a>
@@ -170,13 +175,13 @@
                 <a href="apropos.html">Qui sommes-nous ?</a>
             </nav>
             <nav>
-                <a href="https://twitter.com/home">
+                <a href="https://twitter.com/home" target="_blank"> <!-- https://www.w3schools.com/tags/att_a_target.asp -->
                     <img src="imgs/Networks/Twitter.png" alt="twitter">
                 </a>
-                <a href="https://www.facebook.com/">
+                <a href="https://www.facebook.com/" target="_blank">
                     <img src="imgs/Networks/facebook.png" alt="facebook">
                 </a>
-                <a href="https://www.youtube.com/?hl=fr&gl=FR">
+                <a href="https://www.youtube.com/?hl=fr&gl=FR" target="_blank">
                     <img src="imgs/Networks/YouTube.png" alt="youtube">
                 </a>
             </nav>
