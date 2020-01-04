@@ -9,20 +9,20 @@ body{
 main,header{
     font-family: 'Poppins', sans-serif;    
 }
-h2{
+h1{
     color: #fff;
     font-weight: 800;
     font-size: 80px;
     font-variant: small-caps;
 }
-h3{
+h2{
     color: #ddd;
     font-family: 'Roboto', sans-serif;
     font-variant: small-caps;
     font-size: 30px;
     font-weight: 100;
 }
-main h4{
+main h3{
     color: #fff;
     font-family: 'Poppins', sans-serif;
     font-variant: small-caps;
@@ -196,7 +196,7 @@ p>.aime{
     display: inline-block;
 }
 
-h5{
+h4{
     font-family: 'Roboto', sans-serif;
     font-variant: small-caps;
     color: #fff;
@@ -204,7 +204,7 @@ h5{
     display: inline;
     vertical-align: middle;
 }
-h6{
+h5{
 
     margin-left: 20px;
     color: #828282;
@@ -260,10 +260,10 @@ textarea+button:hover{
         display: grid;
         grid-template-columns: 35% 65%;
     }
-    h2,main h4{
+    h1,main h3{
         margin: 0;
     }
-    h2,h3,main h4,.intro>p,.rating{
+    h1,h2,main h3,.intro>p,.rating{
         padding-left: 100px;
     }
     select{
@@ -331,7 +331,7 @@ textarea+button:hover{
         display:grid;
         grid-template-columns: 550px 750px;
     }
-    h2,h3,main h4,p,.rating{
+    h1,h2,main h3,p,.rating{
         padding-left: 20px;
     }
     p{
@@ -413,7 +413,7 @@ textarea+button:hover{
         display: grid;
         grid-template-columns: repeat(1,1fr);
     }
-    h2,h3,p,main h4,.notation,.favoris{
+    h1,h2,p,main h3,.notation,.favoris{
         text-align: center;
         margin: 10px auto;
     }
