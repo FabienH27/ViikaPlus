@@ -2,12 +2,13 @@
 
 body{
     background-color: #000;
-    background-image: url("../imgs/karen-zhao-jLRIsfkWRGo-unsplash.jpg");
+    background-image: url("../imgs/fond_Blur.png");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 
-#about,header,#catalogue{
+
+*{
     font-family: 'Poppins', sans-serif;
 }
 
@@ -69,11 +70,11 @@ header a>img{
     margin-left: 40px;  
 }
 
-header form img{
+header form img, .search-container a>img{
     padding: 10px;
     border-radius: 40px;
 }
-header form img:hover{
+header form img:hover, .search-container a>img:hover{
     transition: 0.2s;
     background-color: #C60A28;
 }
@@ -257,6 +258,36 @@ header button{
 /* ************************ */
 
 
+/* ************ RECHERCHE ************ */
+
+#recherche h1{
+    color: #fff;
+    padding: 20px 100px;
+}
+
+.rechercher{
+    max-width: 1400px;
+}
+#recherche img{
+    width: 400px;
+}
+#recherche article .hover {
+    display: none;
+    position: absolute;
+    top: 18.7px;
+    left: 0;
+}
+#recherche article{
+    position: relative;
+}
+#recherche article:hover .hover {
+    display: inline;
+}
+
+
+
+
+
 /* ************************ */
 @media screen and (max-width:992px){
     /* header */
@@ -335,6 +366,15 @@ header button{
     }
     .genre{
         text-align: center;
+    }
+    .recherche{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+    }
+    article{   
+        grid-template-columns:1fr;
+        margin: 0 auto;
     }
 }
 
@@ -469,6 +509,15 @@ header button{
     }
     .sf div{    
         margin: 20px auto;
+    }
+    /* recherche */
+    .rechercher{   
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        margin: 0 auto;
+    }
+    .rechercher article{   
+        margin: 0 auto;
     }
 }
 
