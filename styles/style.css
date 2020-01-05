@@ -49,7 +49,7 @@ header>nav>a:nth-child(n+4){
     color: #C60A28;
 }
 .nav-link::before {
-    transition: 300ms;
+    transition: 300ms; /* https://developer.mozilla.org/fr/docs/Web/CSS/transition */
     height: 5px;
     content: "";
     position: absolute;
@@ -77,7 +77,7 @@ header form img, .search-container a>img{
     border-radius: 40px;
 }
 header form img:hover, .search-container a>img:hover{
-    transition: 0.2s;
+    transition: 0.2s;/* https://developer.mozilla.org/fr/docs/Web/CSS/transition */
     background-color: #C60A28;
 }
 header .search-container{
@@ -166,13 +166,13 @@ header button{
 .tendance>h1{
     padding-top: 80px;
     font-weight: 400;
-    letter-spacing: .2em;
+    letter-spacing: .2em; /* https://developer.mozilla.org/fr/docs/Web/CSS/letter-spacing */
     font-size: 15px;
 }
 .tendance>h2{
     margin: 0;
     font-weight: 700;
-    letter-spacing: .15em;
+    letter-spacing: .15em; /* https://developer.mozilla.org/fr/docs/Web/CSS/letter-spacing */
     font-size: 90px;
 }
 
@@ -183,14 +183,14 @@ header button{
     margin-top: 30px;
     padding: 10px 25px;
     font-weight: 600;
-    letter-spacing: .1em;
+    letter-spacing: .1em; /* https://developer.mozilla.org/fr/docs/Web/CSS/letter-spacing */
     background-color: #fff;
     width: auto;
     font-size: 30px;
     font-variant: small-caps;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    transition: .2s;
+    transition: .2s;/* https://developer.mozilla.org/fr/docs/Web/CSS/transition */
     text-decoration: none;
     color: #000;
 }
@@ -228,7 +228,7 @@ header button{
     float: right;
     margin: 15px 20px 0 0;
     font-weight: 400;
-    transition: .2s;
+    transition: .2s;/* https://developer.mozilla.org/fr/docs/Web/CSS/transition */
     font-size: 13px;
 }
 .container a:hover{
@@ -245,8 +245,8 @@ header button{
 .flex div>a>.hover{
     display: none;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 0; /* https://developer.mozilla.org/fr/docs/Web/CSS/top */
+    left: 0; /* https://developer.mozilla.org/fr/docs/Web/CSS/left */
 }
 .flex div{
     position: relative;
@@ -256,7 +256,7 @@ header button{
     display: inline;
 }
 .flex div:hover a>img:first-of-type{
-    visibility: hidden;
+    visibility: hidden; /* https://developer.mozilla.org/fr/docs/Web/CSS/visibility */
 }
 
 /* ************************ */
@@ -321,19 +321,17 @@ header button{
     height: 30px;
     display: block;
     overflow: hidden;
-    unicode-bidi: bidi-override;
-    direction: rtl;
 }
 .rating:not(:checked) > input {
     display: none;
 }
 #like:not(:checked) > label {
-    cursor:pointer;
+    cursor:pointer; /* https://developer.mozilla.org/fr/docs/Web/CSS/cursor */
     float: right;
     font-size: 40px;
     width: 30px;
     color: rgba(254, 152, 72, .4);
-    line-height: 33px;
+    line-height: 33px; /* https://developer.mozilla.org/fr/docs/Web/CSS/line-height */
 }
 #like:not(:checked) > label:hover,
 #like:not(:checked) > label:hover ~ label {
@@ -350,6 +348,7 @@ header button{
     color: rgb(254, 152, 72);
 }
 /**/
+
 #serie .container {
     
     display: block;
@@ -363,6 +362,7 @@ header button{
     -ms-user-select: none;
     user-select: none;
 }
+/* https://codepen.io/lonekorean/pen/RPZZPe */
 .favoris{
     display: inline;
 }
@@ -380,7 +380,7 @@ header button{
     text-align: center;
 }
 .favoris label::before{
-    content:url("../imgs/Icones/Heart.png");
+    content:url("../imgs/Icones/Heart.png"); /* https://developer.mozilla.org/fr/docs/Web/CSS/content */
     vertical-align: middle;
 }
 
@@ -402,7 +402,7 @@ header button{
 /*https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 #serie .container input {
     position: absolute;
-    opacity: 0;
+    opacity: 0; /* https://developer.mozilla.org/fr/docs/Web/CSS/opacity */
     cursor: pointer;
 }
 #serie label.container{
@@ -516,7 +516,6 @@ header button{
     vertical-align: middle;
 }
 #serie h5{
-
     margin-left: 20px;
     color: #828282;
     display: inline;
@@ -579,7 +578,7 @@ textarea+button:hover{
     width: 35px;
     padding-right: 20px;
     vertical-align: middle;
-    filter: brightness(0.5);
+    filter: brightness(0.5); /* https://developer.mozilla.org/fr/docs/Web/CSS/filter */
 }
 #parametres aside>nav>a{
     text-decoration: none;
@@ -592,10 +591,10 @@ textarea+button:hover{
 }
 #parametres aside>nav>a:hover{   
     color: #fff;
-    transition: .2s;
+    transition: .2s; /* https://developer.mozilla.org/fr/docs/Web/CSS/transition */
 }
 #parametres aside>nav>a:hover>img{
-    filter: brightness(1);
+    filter: brightness(1); /* https://developer.mozilla.org/fr/docs/Web/CSS/filter */
 }
 #parametres aside{ 
     background-color: #000;
@@ -615,6 +614,7 @@ textarea+button:hover{
     font-weight: 400;
     font-size: 16px;
     color: #fff;
+    margin-bottom: 200px;
 }
 #parametres h3{
     display: inline-block;
@@ -630,13 +630,13 @@ textarea+button:hover{
     color: #fff;
 }
 #parametres a.active>img{
-    filter: brightness(1);
+    filter: brightness(1);/* https://developer.mozilla.org/fr/docs/Web/CSS/filter */
 }
 .sauvegarder button{
     background-color: #C60A28;
     border: none;
     color: #fff;
-    grid-column: 1 / 3;
+    grid-column: 1 / 3; /* https://developer.mozilla.org/fr/docs/Web/CSS/grid-column */
     margin: 0 auto;
     border-radius: 10px;
     padding: 20px 25px;
@@ -647,13 +647,32 @@ textarea+button:hover{
     font-variant: small-caps;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    transition: .2s;
+    transition: .2s; /* https://developer.mozilla.org/fr/docs/Web/CSS/transition */
 }
 .sauvegarder button:hover{
     box-shadow: 0px 15px 20px rgba(1,1, 1, .5);
     background-color: #F4294A;
+    transform: translateY(-4px); /* https://developer.mozilla.org/fr/docs/Web/CSS/transform */
+}
+.contenu>a{
+    background-color: #C60A28;
+    display:inline;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 350px;
+
+}
+.contenu>a:hover{
+    background-color: #F4294A;
+}
+.contenu>a{
+    text-align: center;
+    font-variant: small-caps;
+    font-size: 30px;
+    font-weight: 600;
+
+    text-decoration: none;
     color: #fff;
-    transform: translateY(-4px);
 }
 #parametres form div label{
     margin-top: 40px;
@@ -671,7 +690,7 @@ textarea+button:hover{
     color: #666;
 }
 #parametres input:focus,button:focus{
-    outline: none;
+    outline: none; /* https://developer.mozilla.org/fr/docs/Web/CSS/outline */
 }
 #parametres input{
     padding: 6px;
@@ -706,10 +725,10 @@ textarea+button:hover{
     cursor: pointer;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
+    right: 0; /* https://developer.mozilla.org/fr/docs/Web/CSS/right */
+    bottom: 0; /* https://developer.mozilla.org/fr/docs/Web/CSS/bottom */
     background-color: #ccc;
-    transition: .4s;
+    transition: .4s;/* https://developer.mozilla.org/fr/docs/Web/CSS/transition */
 }
 
 .slider:before {
@@ -720,7 +739,7 @@ textarea+button:hover{
     left: 8px;
     bottom: 4px;
     background-color: white;
-    transition: .4s;
+    transition: .4s;/* https://developer.mozilla.org/fr/docs/Web/CSS/transition */
 }
 #parametres input:checked + .slider {
     background-color: #C60A28;
@@ -749,13 +768,13 @@ textarea+button:hover{
     grid-column: 2;
 }
 #parametres h6:first-of-type{
-    grid-row: 1;
+    grid-row: 1; /* https://developer.mozilla.org/fr/docs/Web/CSS/grid-row */
 }
 #parametres h6:nth-of-type(2){
-    grid-row: 2;
+    grid-row: 2;/* https://developer.mozilla.org/fr/docs/Web/CSS/grid-row */
 }
 #parametres h6:nth-of-type(3){
-    grid-row: 3;
+    grid-row: 3;/* https://developer.mozilla.org/fr/docs/Web/CSS/grid-row */
 }
 
 #parametres h1{
@@ -814,7 +833,7 @@ textarea+button:hover{
     .categorie{
         display: grid;
         grid-template-columns:1fr;
-        gap: 100px;
+        gap: 100px; /* https://developer.mozilla.org/fr/docs/Web/CSS/gap */
     }
     .sf{
         display: grid;

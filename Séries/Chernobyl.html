@@ -2,14 +2,14 @@
 <html lang="fr">
 	<head>
 		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Un texte de 150 caractères maxi qui résume le contenu de la page"> <!--Facultative mais important pour les moteur de recherche-->
-        <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!--Utilisé par IE et Edge pour une compatibilité descendante-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- https://www.w3schools.com/tags/tag_meta.asp -->
+        <meta name="description" content="Site de streaming"> <!-- https://www.w3schools.com/tags/tag_meta.asp -->
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- https://www.alsacreations.com/astuce/lire/1437-comment-interdire-le-mode-de-compatibilite-sur-ie.html -->
 		<title>Viika+ - Cinémas & Séries</title>
 		
         <link rel="stylesheet" href="../styles/normalize.css">
-        <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap" rel="stylesheet"><!--Ici tous les CSS nécessaires, genre les bibliothèques comme fontasome, bootstrap, les polices google fonts etc.-->
-		<link rel="stylesheet" href="../styles/style.css"> <!--Le style des pages de ton site. Toujours en dernier pour faire de la surcharge-->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,400,700,900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="../styles/style.css">
     </head>
 
     <body id="background">
@@ -20,7 +20,7 @@
                 <a class="nav-link nav-link-grow-up" href="../apropos.html">Qui sommes-nous ?</a>   
                 <a class="nav-link nav-link-grow-up" href="../catalogue.html">Le catalogue</a>  
                 <div class="search-container">
-                    <form action="../Recherche.html">
+                    <form action="../Recherche.html" method="POST">
                         <input name="chercher" type="text" placeholder="Chercher...">
                         <button type="submit"><img src="../imgs/Icones/search-24px.svg" alt="search"></button>
                     </form>
@@ -36,23 +36,25 @@
                     <h1>chernobyl</h1>
                     <section class="notation">
                         <h2>2019 - Craig Mazin</h2>
+                        <!-- https://codepen.io/s_crystal/pen/pJpMZX -->
                         <div id="like" class="rating">
-                            <!-- FIFTH HEART -->
+                            <!-- 5e coeur -->
                             <input type="radio" id="heart_5" name="like" value="5" />
                             <label for="heart_5" title="Chef d'oeuvre">&#9733;</label>
-                            <!-- FOURTH HEART -->
+                            <!-- 4e coeur -->
                             <input type="radio" id="heart_4" name="like" value="4" />
                             <label for="heart_4" title="Très bien">&#9733;</label>
-                            <!-- THIRD HEART -->
+                            <!-- 3e coeur -->
                             <input type="radio" id="heart_3" name="like" value="3" />
                             <label for="heart_3" title="Pas mal">&#9733;</label>
-                            <!-- SECOND HEART -->
+                            <!-- 2e coeur -->
                             <input type="radio" id="heart_2" name="like" value="2" />
                             <label for="heart_2" title="Pas terrible">&#9733;</label>
-                            <!-- FIRST HEART -->
+                            <!-- 1er coeur -->
                             <input type="radio" id="heart_1" name="like" value="1" />
                             <label for="heart_1" title="Très mauvais">&#9733;</label>
                         </div>
+                        <!-- https://codepen.io/lonekorean/pen/RPZZPe -->
                         <div class="favoris">
                             <input id="toggle1" type="checkbox">
                             <label for="toggle1"> Coup de cœur</label>
