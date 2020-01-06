@@ -108,10 +108,10 @@ header button{
 }
 /* --------------- */
 /* ************ INDEX ************ */
-#index h1{
+#index h2{
     text-align: center;
 }
-#index>h1>img{
+#index>h2>img{
     width: 500px;
     margin-top: 180px;
 }
@@ -797,21 +797,26 @@ textarea+button:hover{
 /* ************************ */
 
 /* ************ INDEX ************ */
+#index>h1{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 300px;
+    font-weight: 200;
+}
 
-
-#index .container h1:first-of-type {
+#index .container h2:first-of-type {
     font-weight: 700;
     display: inline-block;
     padding-bottom: 5px;
     position: relative;
     color: #FFF;
 }
-#index section:first-of-type>h1:first-child::after{
+#index section:first-of-type>h2:first-child::after{
     content: url("../imgs/Star.svg");
     display: inline-block;
     width: 20px;
 }
-#index section>h1:first-child:before{
+#index section>h2:first-child:before{
     content: "";
     position: absolute;
     width: 25%;
@@ -819,7 +824,7 @@ textarea+button:hover{
     bottom: 0;
     border-bottom: 5px solid red;
 }
-#index h3,#index p{
+#index h4,#index p{
     margin-top: 0;
     color: #FFF;
     font-weight: 200;
@@ -831,12 +836,13 @@ textarea+button:hover{
     color: #fff;
 }
 
-.container h2{
+.container h3{
     color: #fff;
     font-size: 60px;
     margin: 40px auto 5px auto;
 }
-#index h1:first-of-type{
+#index h2:first-of-type{
+    font-size: 40px;
     color: #fff;
 }
 
@@ -1027,7 +1033,7 @@ textarea+button:hover{
         width: 70%;
         margin-left: 100px;
     }
-    #index h1:first-of-type {
+    #index h2:first-of-type {
         display: inline-block;
         padding-bottom: 5px;
         position: relative;
@@ -1302,13 +1308,13 @@ textarea+button:hover{
     #index>img{
         display: block;
         width: 500px;
-        margin: 250px auto 400px auto;
+        margin: 250px auto 100px auto;
     }
     #index{
         max-width: 1300px;
         margin: auto;
     }
-    #index h1:first-of-type {
+    #index h2:first-of-type {
         display: inline-block;
         padding-bottom: 5px;
         position: relative;
@@ -1337,7 +1343,7 @@ textarea+button:hover{
         float: left;
         width: 100%;
     }
-    .recommandation article:nth-of-type(odd) p, .recommandation article:nth-of-type(odd) h2, #index .recommandation article:nth-of-type(odd) h3{
+    .recommandation article:nth-of-type(odd) p, .recommandation article:nth-of-type(odd) h2, #index .recommandation article:nth-of-type(odd) h4{
         text-align: left;
         margin-left: 10px;
     }
