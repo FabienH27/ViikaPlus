@@ -208,7 +208,7 @@ header button{
     border-radius: 20px;
 }
 
-.container h3{
+#catalogue .container h3{
     position: relative;
     color: #fff;
     display: inline-block;
@@ -270,21 +270,6 @@ header button{
 
 .rechercher{
     max-width: 1400px;
-}
-#recherche img{
-    width: 400px;
-}
-#recherche article .hover {
-    display: none;
-    position: absolute;
-    top: 18.7px;
-    left: 0;
-}
-#recherche article{
-    position: relative;
-}
-#recherche article:hover .hover {
-    display: inline;
 }
 
 /* ************************ */
@@ -357,9 +342,6 @@ header button{
     margin: 20px 100px;
     cursor: pointer;
     font-size: 22px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
     user-select: none;
 }
 /* https://codepen.io/lonekorean/pen/RPZZPe */
@@ -398,6 +380,35 @@ header button{
 .favoris input:checked  {
     background-color: #000;
 } 
+
+/* ma liste*/ 
+.watchlater{
+    display: block;
+    text-align: center;
+}
+.watchlater input {
+    display: none;
+}
+  
+.watchlater label {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+}
+.watchlater label::before{
+    content:url("../imgs/Icones/watchlater.png"); /* https://developer.mozilla.org/fr/docs/Web/CSS/content */
+    vertical-align: middle;
+}
+
+.watchlater input:checked+label::before{
+    content:url("../imgs/Icones/watchlaterChecked.png");
+}
+.watchlater input:checked+label{
+    font-weight: 700;
+}
+
   
 /*https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
 #serie .container input {
@@ -602,7 +613,7 @@ textarea+button:hover{
     border-radius: 20px;
     height: 250px;
     float: left;
-    margin-right: 80px;
+    margin-right: 100px;
 }
 .user>h2{
     font-weight: 700;
@@ -615,6 +626,7 @@ textarea+button:hover{
     font-size: 16px;
     color: #fff;
     margin-bottom: 200px;
+    margin-top: 70px;
 }
 #parametres h3{
     display: inline-block;
@@ -656,10 +668,11 @@ textarea+button:hover{
 }
 .contenu>a{
     background-color: #C60A28;
-    display:inline;
+    display:block;
     padding: 20px;
     border-radius: 10px;
-    margin: 350px;
+    max-width: 300px;
+    margin: auto;
 
 }
 .contenu>a:hover{
@@ -688,6 +701,9 @@ textarea+button:hover{
     background-color: #111;
     border: none;
     color: #666;
+}
+#parametres .contenu{
+    display: inline-block;
 }
 #parametres input:focus,button:focus{
     outline: none; /* https://developer.mozilla.org/fr/docs/Web/CSS/outline */
@@ -782,13 +798,73 @@ textarea+button:hover{
 }
 /* ************************ */
 
+/* ************ INDEX ************ */
+
+
+#index .container h1:first-of-type {
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+    color: #FFF;
+}
+#index section:first-of-type>h1:first-child::after{
+    content: url("../imgs/Star.svg");
+    display: inline-block;
+    width: 20px;
+}
+#index section>h1:first-child:before{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 1px;
+    bottom: 0;
+    border-bottom: 5px solid red;
+}
+#index h3,#index p{
+    margin-top: 0;
+    color: #FFF;
+    font-weight: 200;
+}
+#index section{
+    margin-left:60px;
+}
+.desc{
+    color: #fff;
+}
+
+.container h2{
+    color: #fff;
+    font-size: 60px;
+    margin: 40px auto 5px auto;
+}
+#index h1:first-of-type{
+    color: #fff;
+}
+
+.recommandation img, .news img{
+    width: 400px;
+}
+.recommandation aside .hover,  .news aside .hover{
+    display: none;
+    position: absolute;
+    left: 0;
+}
+.recommandation aside, .news aside{
+    position: relative;
+}
+.recommandation aside:hover .hover, .news aside:hover .hover{
+    display: inline;
+}
+
+
+/* ************************ */
 
 @media screen and (max-width:768px){
     .videoplayer,select{
         width: 100%;
     }
 }
-
 
 @media screen and (max-width:992px){
     /* header */
@@ -819,7 +895,7 @@ textarea+button:hover{
         margin-top: 150px;
     }
 
-    .container img{
+    #catalogue .container img{
         width:200px;
     }
     .nouveautes,.action{
@@ -861,7 +937,6 @@ textarea+button:hover{
         width: 80%;
         margin: 0 auto;
     }
-
 }
 
 @media screen and (max-width:1199px){
@@ -942,6 +1017,56 @@ textarea+button:hover{
         margin: auto;
         display: block;
         width: 80%;
+    }
+    /* index */
+    #index>img{
+        display: block;
+        width: 70%;
+        margin: 250px auto 400px auto;
+    }
+    #index .container img{
+        width: 70%;
+        margin-left: 100px;
+    }
+    #index h1:first-of-type {
+        display: inline-block;
+        padding-bottom: 5px;
+        position: relative;
+        font-size: 20px;
+    }
+     article{
+        text-align: center;
+    }
+    .recommandation article p{
+        text-align: justify;
+    }
+    #index div{
+        margin-right: 30px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }  
+    #index .container aside:first-of-type{
+        grid-row: 1;
+    }
+    #index .container aside:nth-of-type(2){
+        grid-row: 3;
+    }
+    /* recherche */
+    #recherche img{
+        width: 300px;
+    }
+    #recherche article .hover{
+        display: none;
+        position: absolute;
+        left: 0;
+    }
+    #recherche article{
+        position: relative;
+        max-width: 300px;
+        margin: auto;
+    }
+    #recherche article:hover .hover {
+        display: inline;
     }
 }
 
@@ -1101,7 +1226,7 @@ textarea+button:hover{
     #serie h1,#serie h3{
         margin: 0;
     }
-    #serie h1,#serie h2,#serie  h3,.intro>p,.rating{
+    #serie h1,#serie h2,#serie  h3,.intro>p,.rating,.watchlater{
         padding-left: 100px;
     }
     #serie select{
@@ -1161,6 +1286,67 @@ textarea+button:hover{
     .sauvegarder{
         margin-top: 100px;
         grid-column: 1 / 3;
+    }
+    /* index */
+    #index>img{
+        display: block;
+        width: 500px;
+        margin: 250px auto 400px auto;
+    }
+    #index{
+        max-width: 1300px;
+        margin: auto;
+    }
+    #index h1:first-of-type {
+        display: inline-block;
+        padding-bottom: 5px;
+        position: relative;
+    }
+    #index div{
+        display: grid;
+        grid-template-columns: repeat(2, 575px);
+    }    
+    #index section article:nth-of-type(even),.news article{
+        display: block;
+        text-align: right;
+        margin-right: 30px;
+    }
+    #index .recommandation article:nth-of-type(odd){
+        display: block;
+        text-align: left;
+        margin-left: 30px;
+    }
+
+    #index div:nth-child(odd) aside>img{
+        float: right;
+        width: 100%;
+    }
+
+    #index div:nth-child(even) aside>img{
+        float: left;
+        width: 100%;
+    }
+    .recommandation article:nth-of-type(odd) p, .recommandation article:nth-of-type(odd) h2, #index .recommandation article:nth-of-type(odd) h3{
+        text-align: left;
+        margin-left: 10px;
+    }
+    .recommandation article:nth-of-type(even) p{
+        text-align: right;
+    }
+    #recherche img{
+        width: 400px;
+    }
+    #recherche article .hover{
+        display: none;
+        position: absolute;
+        top: 18.7px;
+        left: 0;
+    }
+    #recherche article{
+        position: relative;
+    }
+    #recherche article:hover .hover {
+        display: inline;
     }
 }
 
