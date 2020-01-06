@@ -219,6 +219,7 @@ header button{
 
 #catalogue h4{
     margin-top: 150px;
+    margin-bottom: 0;
     color: #fff;
     font-size: 25px;
 }
@@ -874,22 +875,16 @@ textarea+button:hover{
     .search-container form{
         margin-right: 100px;
     }
-    /* a propos */
-    .illustration img:first-of-type{
-        width: 100%;
-    }
-    .illustration img:nth-of-type(2){
-        margin: auto;
-    }
-    .illustration{
-        text-align: center;
-    }
     /* catalogue */
     .tendance h2{
         font-size: 300%;
     }
     .tendance{
         margin-top: 150px;
+    }
+    /* a propos */
+    .illustration img:nth-of-type(2){
+        width: 30%;
     }
 
     #catalogue .container img{
@@ -930,10 +925,6 @@ textarea+button:hover{
     footer>nav:nth-child(2){
         text-align: center;
     }
-    #serie>div{
-        width: 80%;
-        margin: 0 auto;
-    }
 }
 
 @media screen and (max-width:1199px){
@@ -953,6 +944,17 @@ textarea+button:hover{
     #about article{   
         grid-template-columns:1fr;
         margin: 0 auto;
+    }
+    /* a propos */
+    .illustration img{
+        display: block;
+        margin: 0 auto;
+    }
+    .illustration img:first-of-type{
+        width: 100%;
+    }
+    .illustration img:nth-of-type(2){
+        margin: auto;
     }
     /* serie */
     #serie>div:first-of-type{
@@ -1064,6 +1066,11 @@ textarea+button:hover{
     }
     #recherche article:hover .hover {
         display: inline;
+    }
+    /* serie */ 
+    #serie>div{
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -1220,9 +1227,12 @@ textarea+button:hover{
         margin: 0 auto;
     }
     /* serie */
-    #serie>div:first-of-type{
+    #serie>div{
         display: grid;
-        grid-template-columns: 60% 95%;
+        grid-template-columns: 70% 95%;
+    }
+    #serie>div .videoplayer{
+        margin-left: 50px;
     }
     #serie h1,#serie h3{
         margin: 0;
@@ -1243,7 +1253,7 @@ textarea+button:hover{
     }
     .videoplayer video{
         height: auto;
-        width: 97%;
+        width: 110%;
     }
     .intro>p{
         max-width: 600px;
