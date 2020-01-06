@@ -225,11 +225,8 @@ header button{
 .container>a{
     text-decoration: none;
     color: #C60A28;
-    float: right;
-    margin: 15px 20px 0 0;
-    font-weight: 400;
-    transition: .2s;/* https://developer.mozilla.org/fr/docs/Web/CSS/transition */
     font-size: 13px;
+    float: right;
 }
 .container a:hover{
     color: #fff;
@@ -1114,7 +1111,11 @@ textarea+button:hover{
         width:600px;
     }
 }
-
+@media screen and (min-width:576px){
+    .container>a{
+        margin: 15px 20px 0 0;
+    }
+}
 
 @media screen and (min-width:1199px){
     /* header */
